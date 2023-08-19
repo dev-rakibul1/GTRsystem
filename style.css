@@ -1,0 +1,165 @@
+/* Hero section */
+.hero-section-4,
+.hero-section-3,
+.hero-section-2,
+.hero-section {
+  position: relative;
+  /* overflow: hidden; */
+  z-index: 1;
+}
+
+.landing-page {
+  position: relative;
+}
+
+.hero-blobs {
+  position: absolute;
+  top: 12.5%;
+  right: -5%;
+  z-index: -1;
+}
+
+/* **************************************************** */
+
+.slider-thumb {
+  width: 500px;
+  height: 500px;
+  background: linear-gradient(24deg, #4502fa, #ea01ec);
+  border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+  will-change: border-radius, transform, opacity;
+  animation: sliderShape 5s linear infinite;
+  display: block;
+  z-index: -1;
+  -webkit-animation: sliderShape 5s linear infinite;
+}
+@keyframes sliderShape {
+  0%,
+  100% {
+    border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+    transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+  }
+  34% {
+    border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+    transform: translate3d(0, 5px, 0) rotateZ(0.01deg);
+  }
+  50% {
+    transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+  }
+  67% {
+    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+    transform: translate3d(0, -3px, 0) rotateZ(0.01deg);
+  }
+}
+
+/* **************************************************** */
+
+.hero-section-3::before {
+  position: absolute;
+  content: "";
+  background: url("./images/shape/Vector-2.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-attachment: scroll;
+  background-size: contain;
+  right: 15%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.hero-section-4::before {
+  position: absolute;
+  content: "";
+  background: url("./images/shape/Vector-3.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-attachment: scroll;
+  background-size: contain;
+  right: 10%;
+  top: 6%;
+  width: 100%;
+  height: 84%;
+  z-index: -1;
+}
+/* Hero section */
+/* .hero-section-2::before {
+  position: absolute;
+  content: "";
+  background: url("./images/shape/Vector.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-attachment: scroll;
+  background-size: contain;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+} */
+
+/* avatar */
+
+.avatar-profile span {
+  position: absolute;
+}
+
+.avatar-profile img {
+  border: 2px solid #fff;
+}
+
+.avatar-profile {
+  width: 105px;
+  display: inline-block;
+}
+
+.avatar-profile span:last-child {
+  left: 56px;
+}
+
+.avatar-profile span:nth-child(2) {
+  left: 28px;
+}
+
+.avatar-article {
+  z-index: 5;
+  margin-left: 10px;
+}
+
+/* animation text */
+.text-animation span {
+  position: relative;
+  opacity: 0;
+  animation: textAnimation 1.2s ease-in-out forwards;
+}
+
+@keyframes textAnimation {
+  to {
+    top: 0;
+    left: 0;
+    opacity: 1;
+  }
+}
+
+.hero-thumb img.zoomed-in {
+  transform: scale(1); /* Adjust the scale factor as needed */
+  transition: transform 0.5s ease-in-out;
+}
+
+.hero-thumb img.zoomed-out {
+  transform: scale(0); /* Adjust the scale factor as needed */
+  transition: transform 0.5s ease-in-out;
+}
+
+/* ************************** */
+
+.initialAnimation img {
+  width: 0;
+  height: 0;
+  transition: 1s;
+}
+
+.initialAnimation img {
+  transition: 1s;
+  width: 100%;
+  height: 100%;
+}

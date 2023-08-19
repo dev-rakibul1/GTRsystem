@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GTR system</title>
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/178ebc03bb.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- slick slider -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+
+    <!-- Tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- reset css -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <!-- Navbar -->
+    <link rel="stylesheet" href="./css/nav.css" />
+    <!-- shape -->
+    <link rel="stylesheet" href="./css/shape.css" />
+    <!-- solar earth -->
+    <link rel="stylesheet" href="./css//solar-earth.css" />
+    <!-- social icons -->
+    <link rel="stylesheet" href="./css/social-icons.css" />
+    <!-- main style sheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="gtr-system">
+      <div class="menu-overly"></div>
+      <!-- off canvas menu -->
+      <nav
+        class="navbar lg:hidden flex items-start justify-start offcanvas-menu"
+      >
+        <div class="offcanvas-close">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="theme-container p-4">
+          <!-- navbar brand -->
+          <a href="./index.html" class="navbar-brand">
+            <img
+              src="./images/logo/logo.png"
+              class="w-full navbar-brand-logo"
+              alt=""
+            />
+          </a>
+
+          <!-- navbar link -->
+          <div class="navbar-link-and-social mt-7">
+            <ul class="navbar-nav">
+              <li class="nav-items">
+                <a href="#" class="nav-link"
+                  >Home <i class="fa-solid fa-angle-down"></i>
+                </a>
+                <ul class="dropdown">
+                  <li class="dropdown-items">
+                    <a href="./page/home-1.html" class="dropdown-link"
+                      >Home 1</a
+                    >
+                  </li>
+                  <li class="dropdown-items">
+                    <a href="./page/home-2.html" class="dropdown-link"
+                      >Home 2</a
+                    >
+                  </li>
+                  <li class="dropdown-items">
+                    <a href="./page/home-3.html" class="dropdown-link"
+                      >Home 3</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-items">
+                <a href="#" class="nav-link">Products</a>
+              </li>
+              <li class="nav-items">
+                <a href="#" class="nav-link">Industries</a>
+              </li>
+              <li class="nav-items">
+                <a href="#" class="nav-link">news & insights</a>
+              </li>
+              <li class="nav-items">
+                <a href="#" class="nav-link">about us</a>
+              </li>
+            </ul>
+
+            <!-- navbar social icons -->
+            <div class="relative">
+              <ul
+                class="nav-social flex items-center justify-start mt-2 max-w-full"
+              >
+                <li class="social-items">
+                  <a href="#" class="social-link"
+                    ><i class="fa-brands fa-facebook-f"></i
+                  ></a>
+                </li>
+                <li class="social-items">
+                  <a href="#" class="social-link"
+                    ><i class="fa-brands fa-twitter"></i
+                  ></a>
+                </li>
+                <li class="social-items">
+                  <a href="#" class="social-link"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                </li>
+                <li class="social-items">
+                  <a href="#" class="social-link"
+                    ><i class="fa-brands fa-youtube"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Navigation bar -->
+      <nav class="navbar">
+        <div class="theme-container flex items-center justify-between py-3">
+          <!-- navbar brand -->
+          <a href="./index.html" class="navbar-brand">
+            <img
+              src="./images/logo/logo.png"
+              class="w-full navbar-brand-logo"
+              alt=""
+            />
+          </a>
+
+          <!-- navbar link -->
+          <div class="lg:block hidden">
+            <div
+              class="navbar-link-and-social flex items-center justify-between"
+            >
+              <ul class="navbar-nav flex items-center justify-between">
+                <li class="nav-items flex items-center justify-center">
+                  <a href="./index.html" class="nav-link"
+                    >Home <i class="fa-solid fa-angle-down"></i>
+                  </a>
+                  <ul class="dropdown">
+                    <li class="dropdown-items">
+                      <a href="./page/home-1.html" class="dropdown-link"
+                        >Home 1</a
+                      >
+                    </li>
+                    <li class="dropdown-items">
+                      <a href="./page/home-2.html" class="dropdown-link"
+                        >Home 2</a
+                      >
+                    </li>
+                    <li class="dropdown-items">
+                      <a href="./page/home-3.html" class="dropdown-link"
+                        >Home 3</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-items">
+                  <a href="#" class="nav-link">Products</a>
+                </li>
+                <li class="nav-items">
+                  <a href="#" class="nav-link">Industries</a>
+                </li>
+                <li class="nav-items">
+                  <a href="#" class="nav-link">news & insights</a>
+                </li>
+                <li class="nav-items">
+                  <a href="#" class="nav-link">about us</a>
+                </li>
+              </ul>
+
+              <!-- navbar social icons -->
+              <ul class="nav-social flex items-center justify-between ml-12">
+                <li class="social-items">
+                  <a href="#" class="social-link"
+                    ><i class="fa-brands fa-facebook-f"></i
+                  ></a>
+                </li>
+                <li class="social-items">
+                  <a href="#" class="social-link"
+                    ><i class="fa-brands fa-twitter"></i
+                  ></a>
+                </li>
+                <li class="social-items">
+                  <a href="#" class="social-link"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                </li>
+                <li class="social-items">
+                  <a href="#" class="social-link"
+                    ><i class="fa-brands fa-youtube"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- navbar toggler icons -->
+          <div class="p-4 navbar-toggler-icons lg:hidden">
+            <div class="hamburger-wrap">
+              <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!----------------------START HERO SECTION-------------------->
+      <section
+        class="hero-section w-full overflow-hidden"
+        style="--random-value: 0.5"
+      >
+        <div class="theme-container flex items-center justify-start h-full">
+          <!--Start landing page -->
+          <div class="landing-page w-full">
+            <!-- slider -->
+            <div class="gtr-slider w-full">
+              <!-- slide 01 -->
+              <div class="slide-content py-36 p-2">
+                <div
+                  class="grt-slide-items md:flex justify-between items-center"
+                >
+                  <article class="w-full md:w-[40%]">
+                    <div class="">
+                      <h4 class="text-animation text-5xl font-bold">
+                        Synchronizeo perfectly
+                      </h4>
+                      <p class="mt-4 text-[#7B7583] text-md text-animation">
+                        The epic bromance of travel content and tech features
+                      </p>
+                    </div>
+                    <button class="landing-btn mt-5">
+                      know more <i class="fa-solid fa-arrow-trend-up"></i>
+                    </button>
+
+                    <!-- avatar -->
+                    <div
+                      class="avatar-area relative mt-7 flex xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-2"
+                    >
+                      <div class="avatar-profile flex items-center">
+                        <span
+                          ><img
+                            src="./images/avatar/avatar-1.png"
+                            class="w-[45px] h-[45px] object-cover rounded-full"
+                            alt=""
+                        /></span>
+                        <span
+                          ><img
+                            src="./images/avatar/avatar-2.png"
+                            class="w-[45px] h-[45px] object-cover rounded-full"
+                            alt=""
+                        /></span>
+                        <span
+                          ><img
+                            src="./images/avatar/avatar-3.png"
+                            class="w-[45px] h-[45px] object-cover rounded-full"
+                            alt=""
+                        /></span>
+                      </div>
+                      <div class="avatar-article">
+                        <h2 class="text-2xl font-bold">250+ partners</h2>
+                        <small class="font-thin m-0 p-0 mt-[10px]"
+                          >Around the world</small
+                        >
+                      </div>
+                    </div>
+                  </article>
+                  <!-- left image thumb -->
+                  <div class="hero-thumb">
+                    <div class="images-shape-move-2">
+                      <img
+                        src="./images/shape/earth.png"
+                        class="w-full"
+                        alt="hero-shape"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- slide 02 -->
+              <div class="slide-content py-36 p-2">
+                <div
+                  class="grt-slide-items md:flex justify-between items-center"
+                >
+                  <article class="w-full md:w-[40%]">
+                    <div class="">
+                      <h4 class="text-animation text-5xl font-bold">
+                        NOT AN <br />
+                        ORDINARY B2B
+                      </h4>
+                      <p class="mt-4 text-[#7B7583] text-md text-animation">
+                        We jazz up travel solutions with our <br />
+                        harmonious tech
+                      </p>
+                    </div>
+                    <button class="landing-btn mt-5">
+                      know more <i class="fa-solid fa-arrow-trend-up"></i>
+                    </button>
+
+                    <!-- avatar -->
+                    <div
+                      class="avatar-area relative mt-7 flex xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-2"
+                    >
+                      <div class="avatar-profile flex items-center">
+                        <span
+                          ><img
+                            src="./images/avatar/avatar-1.png"
+                            class="w-[45px] h-[45px] object-cover rounded-full"
+                            alt=""
+                        /></span>
+                        <span
+                          ><img
+                            src="./images/avatar/avatar-2.png"
+                            class="w-[45px] h-[45px] object-cover rounded-full"
+                            alt=""
+                        /></span>
+                        <span
+                          ><img
+                            src="./images/avatar/avatar-3.png"
+                            class="w-[45px] h-[45px] object-cover rounded-full"
+                            alt=""
+                        /></span>
+                      </div>
+                      <div class="avatar-article">
+                        <h2 class="text-2xl font-bold">250+ partners</h2>
+                        <small class="font-thin m-0 p-0 mt-[10px]"
+                          >Around the world</small
+                        >
+                      </div>
+                    </div>
+                  </article>
+                  <!-- left image thumb -->
+                  <div class="hero-thumb">
+                    <div class="images-shape-move">
+                      <img
+                        src="./images/shape/home-2.png"
+                        class="w-full"
+                        alt="hero-shape"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- slide 03 -->
+              <div class="slide-content py-36 p-2">
+                <div
+                  class="grt-slide-items md:flex justify-between items-center"
+                >
+                  <article class="w-full md:w-[40%]">
+                    <div class="">
+                      <h4 class="text-animation text-5xl font-bold">
+                        BE A TRAVEL BOSS IN <br />
+                        YOUR TERRITORY
+                      </h4>
+                      <p class="mt-4 text-[#7B7583] text-md text-animation">
+                        Fuse your GDS content with our turbocharged tech <br />
+                        on your own online platform. It’s like a fusion dance
+                        <br />
+                        empowering your travel platform beyond imagination!
+                      </p>
+                    </div>
+                    <button class="landing-btn mt-5">
+                      know more <i class="fa-solid fa-arrow-trend-up"></i>
+                    </button>
+
+                    <!-- avatar -->
+                    <div
+                      class="avatar-area relative mt-7 flex xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-2"
+                    >
+                      <div class="avatar-profile flex items-center">
+                        <span
+                          ><img
+                            src="./images/avatar/avatar-1.png"
+                            class="w-[45px] h-[45px] object-cover rounded-full"
+                            alt=""
+                        /></span>
+                        <span
+                          ><img
+                            src="./images/avatar/avatar-2.png"
+                            class="w-[45px] h-[45px] object-cover rounded-full"
+                            alt=""
+                        /></span>
+                        <span
+                          ><img
+                            src="./images/avatar/avatar-3.png"
+                            class="w-[45px] h-[45px] object-cover rounded-full"
+                            alt=""
+                        /></span>
+                      </div>
+                      <div class="avatar-article">
+                        <h2 class="text-2xl font-bold">250+ partners</h2>
+                        <small class="font-thin m-0 p-0 mt-[10px]"
+                          >Around the world</small
+                        >
+                      </div>
+                    </div>
+                  </article>
+                  <!-- left image thumb -->
+                  <div class="hero-thumb">
+                    <div class="images-shape-move">
+                      <img
+                        src="./images/shape/shape-big-rocks-background 1.png"
+                        class="w-full"
+                        alt="hero-shape"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- slide 04 -->
+              <div class="slide-content py-36 p-2">
+                <div
+                  class="grt-slide-items md:flex justify-between items-center"
+                >
+                  <article class="w-full md:w-[40%]">
+                    <div class="">
+                      <h4 class="text-animation text-5xl font-bold">
+                        Travel Content API <br />
+                        An adventurous <br />
+                        Playground
+                      </h4>
+                      <p class="mt-4 text-[#7B7583] text-md text-animation">
+                        Fasten your seatbelts for a data-driven joyride - our
+                        Travel <br />
+                        Content API is your gateway to super-fast, super-smart
+                        <br />
+                        responses, and boundless opportunities.
+                      </p>
+                    </div>
+                    <button class="landing-btn mt-5">
+                      know more <i class="fa-solid fa-arrow-trend-up"></i>
+                    </button>
+
+                    <!-- avatar -->
+                    <div
+                      class="avatar-area relative mt-7 flex xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-2"
+                    >
+                      <div class="avatar-profile flex items-center">
+                        <span
+                          ><img
+                            src="./images/avatar/avatar-1.png"
+                            class="w-[45px] h-[45px] object-cover rounded-full"
+                            alt=""
+                        /></span>
+                        <span
+                          ><img
+                            src="./images/avatar/avatar-2.png"
+                            class="w-[45px] h-[45px] object-cover rounded-full"
+                            alt=""
+                        /></span>
+                        <span
+                          ><img
+                            src="./images/avatar/avatar-3.png"
+                            class="w-[45px] h-[45px] object-cover rounded-full"
+                            alt=""
+                        /></span>
+                      </div>
+                      <div class="avatar-article">
+                        <h2 class="text-2xl font-bold">250+ partners</h2>
+                        <small class="font-thin m-0 p-0 mt-[10px]"
+                          >Around the world</small
+                        >
+                      </div>
+                    </div>
+                  </article>
+                  <!-- left image thumb -->
+                  <div class="hero-thumb">
+                    <div class="images-shape-move-2">
+                      <img
+                        src="./images/shape/04 1.png"
+                        class="w-full"
+                        alt="hero-shape"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ------------------------------- -->
+
+            <div class="hero-blobs hidden md:block">
+              <!-- <div class="square twitter">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div> -->
+
+              <!------------------------
+
+CHROME ONLY
+
+--------------------------->
+              <div class="slider-thumb"></div>
+            </div>
+
+            <!-- ------------------------------- -->
+          </div>
+          <!--End of landing page -->
+        </div>
+
+        <div class="shape-area">
+          <!-- shape 01 -->
+          <span class="shape-1">
+            <svg
+              id="10015.io"
+              viewBox="0 0 480 480"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <path
+                fill="#00767c"
+                d="M296,296.5Q175,353,154,203.5Q133,54,275,147Q417,240,296,296.5Z"
+              />
+            </svg>
+          </span>
+
+          <!-- shape 02 -->
+          <span class="shape-2">
+            <svg
+              id="10015.io"
+              viewBox="0 0 480 480"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <path
+                fill="#d501ee"
+                d="M336.5,282Q324,324,282,347Q240,370,213.5,331.5Q187,293,129,266.5Q71,240,112,196.5Q153,153,196.5,88.5Q240,24,321.5,50.5Q403,77,376,158.5Q349,240,336.5,282Z"
+              />
+            </svg>
+          </span>
+
+          <!-- shape 03 -->
+          <span class="shape-3">
+            <svg viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <radialGradient id="b" r="100%" cx="50%" cy="50%">
+                  <stop offset="0%" stop-color="#667bff" />
+                  <stop offset="50%" stop-color="#3d0072" />
+                  <stop offset="100%" />
+                </radialGradient>
+                <clipPath id="a">
+                  <path
+                    fill="currentColor"
+                    d="M744.5 669Q770 838 617 749t-327-76.5q-174 12.5-163-167t162.5-221q151.5-41.5 327-96t139 128.5q-36.5 183-11 352Z"
+                  />
+                </clipPath>
+              </defs>
+              <g clip-path="url(#a)">
+                <path
+                  fill="url(#b)"
+                  d="M744.5 669Q770 838 617 749t-327-76.5q-174 12.5-163-167t162.5-221q151.5-41.5 327-96t139 128.5q-36.5 183-11 352Z"
+                />
+              </g>
+            </svg>
+          </span>
+
+          <!-- shape 04 -->
+          <span class="shape-4">
+            <svg
+              id="10015.io"
+              viewBox="0 0 480 480"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <path
+                fill="#474bff"
+                d="M350.5,285Q292,330,208,386Q124,442,117.5,341Q111,240,161.5,215.5Q212,191,247,179.5Q282,168,345.5,204Q409,240,350.5,285Z"
+              />
+            </svg>
+          </span>
+        </div>
+      </section>
+      <!----------------------END OF HERO SECTION-------------------->
+    </div>
+
+    <!-- script link -->
+
+    <!-- slick start -->
+    <!-- script file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- slick end -->
+    <!-- <script src="./js/textAnimation.js"></script> -->
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

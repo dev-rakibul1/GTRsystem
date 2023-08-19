@@ -1,0 +1,236 @@
+.nav-social li,
+.navbar-nav .nav-items {
+  margin: 5px 10px;
+}
+.dropdown,
+.navbar-nav {
+  /* padding: 10px 20px; */
+  position: relative;
+}
+
+.nav-dropdown .dropdown-items .dropdown-link,
+.navbar-nav .nav-items .nav-link {
+  font-weight: 700;
+  text-transform: capitalize;
+  /* position: relative; */
+}
+
+.navbar .navbar-brand {
+  width: 150px;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  cursor: pointer;
+}
+
+.dropdown .dropdown-items .dropdown-link,
+.navbar-nav .nav-items .nav-link {
+  position: relative;
+  display: block;
+}
+
+.dropdown .dropdown-items .dropdown-link::after,
+.navbar-nav .nav-items .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -3px;
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.5s ease;
+  transform: scaleX(0);
+  margin-top: 5px;
+}
+.dropdown .dropdown-items .dropdown-link:hover::after,
+.navbar-nav .nav-items .nav-link:hover::after {
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}
+
+.offcanvas-menu {
+  position: absolute;
+  top: 0;
+  left: -999px;
+  background: #fff;
+  width: 300px;
+  max-width: 100%;
+  transition: all 0.5s;
+  height: 100%;
+  z-index: 9;
+}
+
+.offcanvas-trigger {
+  left: 0;
+}
+
+.off-canvas-menu {
+  position: relative;
+}
+.off-canvas-menu ul li {
+  list-style-type: none;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.off-canvas-menu ul li a i {
+  margin-right: 20px;
+}
+
+.off-canvas-menu ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+
+.off-canvas-menu ul li a:hover {
+  color: #afafaf;
+}
+
+.off-canvas-menu {
+  position: absolute;
+  top: 0;
+  left: -99px;
+  width: 75%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 75%);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  transform: translateX(0);
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 6;
+}
+
+.hamburger-wrap {
+  z-index: 6;
+}
+
+.hamburger-trigger {
+  left: 0 !important;
+  transform: translateX(1);
+  opacity: 1;
+  visibility: visible;
+  z-index: 10;
+  overflow-y: scroll;
+}
+
+.off-canvas-menu-logo img {
+  width: 150px;
+}
+
+.hamburger {
+  position: relative;
+  overflow: hidden;
+  padding: 6px;
+  cursor: pointer;
+}
+
+/* .hamburger {
+    display: none;
+  } */
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #858585;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.menu-link.active {
+  background-color: red;
+}
+
+/* overly */
+.menu-overly {
+  opacity: 0;
+  transition: 0.5s;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  position: fixed;
+  opacity: 0.5;
+  z-index: -1;
+  opacity: 0;
+}
+.menu-overly-add {
+  width: 100%;
+  z-index: 5;
+  height: 100%;
+  opacity: 0.7;
+  visibility: visible;
+  background: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.offcanvas-close i {
+  position: absolute;
+  right: 0;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #b9b9b9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+/* dropdown menu */
+.nav-items {
+  /* position: relative; */
+}
+
+li.dropdown-items {
+  line-height: 36px;
+  font-weight: bold;
+}
+
+.dropdown {
+  position: absolute;
+  left: 0;
+  background-color: #e7e7e7;
+  width: 100%;
+  max-width: 100%;
+  width: 254px;
+  padding: 15px;
+  top: 25px;
+  transform: scaleY(0);
+  transition: 0.5s;
+  transform-origin: top;
+  visibility: hidden;
+  opacity: 0;
+  z-index: -1;
+}
+
+.nav-items:hover .dropdown {
+  transform: scaleY(1);
+  top: 45px;
+  visibility: visible;
+  opacity: 1;
+  z-index: 99;
+}

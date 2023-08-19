@@ -1,0 +1,138 @@
+/*! HTML5 Boilerplate version 1.0.0 | MIT License | It's free and comfort usable */
+
+/* reset.css 1.0.0 | RAKIBUL ISLAM
+/*
+ *It's default CSS use in website and cross-browser styling. This code collects in
+  HTML5 and CSS3 this class flowing and create a website in a simple time!
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+/*
+ * div default margin and padding none 
+ */
+
+html,
+body {
+  box-sizing: border-box;
+  font-smooth: inherit;
+  scroll-behavior: smooth;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  width: 100%;
+  height: 100%;
+}
+/* -------------------------------------------------------------------------- */
+/* Container */
+/* -------------------------------------------------------------------------- */
+.theme-container {
+  width: 1170px;
+  height: auto;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#gtr-system {
+  width: 100%;
+  height: 100%;
+}
+/*
+  * Remove the margin and padding in all browsers.
+  */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="number"]:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  outline: none;
+}
+
+input::placeholder {
+  color: #a1a1a1; /* Desired placeholder color */
+}
+textarea:focus {
+  outline: none; /* Optional: Remove the outline when the textarea is focused */
+}
+textarea {
+  border: 1px solid #ddd;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style-type: none;
+  list-style: none;
+}
+
+/* Example styling */
+.slider {
+  width: 80%; /* Adjust the width as needed */
+  margin: 0 auto;
+}
+
+.slide img {
+  max-width: 100%;
+  height: auto;
+}
+
+.common-btn {
+  border: none;
+  width: 100%;
+  border-radius: 5px;
+  background: #ddd;
+  cursor: pointer !important;
+  padding: 11px;
+  font-weight: 600;
+  font-size: 11px;
+  color: #000;
+  font-size: 15px;
+}
+
+.common-btn:hover {
+  background-color: #cfcfcf;
+  cursor: pointer;
+  color: #000;
+}
+
+/* menu overly */
+.menu-overly {
+  opacity: 0;
+  transition: 0.5s;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+}
+.menu-overly-add {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: 5;
+  position: absolute;
+  opacity: 0.5;
+  visibility: visible;
+}
+
+/* button */
+.landing-btn {
+  padding: 13px 39px;
+  background: linear-gradient(24deg, #4502fa, #ea01ec);
+  border-radius: 50px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+}
+/* ===================================0END0==================================== */
