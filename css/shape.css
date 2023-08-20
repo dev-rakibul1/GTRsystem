@@ -124,7 +124,7 @@
   /* position: absolute; */
   display: block;
   opacity: 1;
-  animation: float 15s ease-in-out infinite;
+  animation: float 9s ease-in-out infinite;
   right: 0;
   display: flex;
   justify-content: center;
@@ -137,13 +137,14 @@
     transform: translateY(0px);
   }
   50% {
-    transform: translateY(-40px);
+    transform: translateY(-60px);
   }
   100% {
     transform: translateY(0px);
   }
 }
 
+.images-shape-move-2 img,
 .images-shape-move img {
   width: 400px;
   max-width: 100%;
