@@ -4,58 +4,42 @@
 .hero-section-2,
 .hero-section {
   position: relative;
-  /* overflow: hidden; */
   z-index: 1;
+}
+
+.section-header {
+  background: rgb(255, 255, 255);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0) 8%,
+    rgba(234, 1, 236, 0.09287464985994398) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0) 8%,
+    rgba(234, 1, 236, 0.09287464985994398) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0) 8%,
+    rgba(234, 1, 236, 0.09287464985994398) 100%
+  );
 }
 
 .landing-page {
   position: relative;
 }
 
-.hero-blobs {
+/* .hero-blobs {
   position: absolute;
-  top: 12.5%;
-  right: -5%;
+  top: 50%;
+  right: -18%;
   z-index: -1;
-}
-
+  transform: translate(0, -50%);
+} */
 .grt-slide-items article h4 {
   text-transform: uppercase;
 }
-
-/* **************************************************** */
-
-.slider-thumb {
-  width: 500px;
-  height: 500px;
-  background: linear-gradient(24deg, #4502fa, #ea01ec);
-  border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
-  will-change: border-radius, transform, opacity;
-  animation: sliderShape 5s linear infinite;
-  display: block;
-  z-index: -1;
-  -webkit-animation: sliderShape 5s linear infinite;
-}
-@keyframes sliderShape {
-  0%,
-  100% {
-    border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
-    transform: translate3d(0, 0, 0) rotateZ(0.01deg);
-  }
-  34% {
-    border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
-    transform: translate3d(0, 5px, 0) rotateZ(0.01deg);
-  }
-  50% {
-    transform: translate3d(0, 0, 0) rotateZ(0.01deg);
-  }
-  67% {
-    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
-    transform: translate3d(0, -3px, 0) rotateZ(0.01deg);
-  }
-}
-
-/* **************************************************** */
 
 /* avatar */
 
@@ -102,12 +86,23 @@
 
 .hero-thumb img.zoomed-in {
   transform: scale(1); /* Adjust the scale factor as needed */
-  transition: transform 0.5s ease-in-out;
+  transition: transform 1s ease-in-out;
 }
 
 .hero-thumb img.zoomed-out {
   transform: scale(0); /* Adjust the scale factor as needed */
-  transition: transform 0.5s ease-in-out;
+  transition: transform 1s ease-in-out;
+}
+
+/* text animation */
+.text-zoom-in {
+  transform: scale(1); /* Adjust the scale factor as needed */
+  transition: transform 1s ease-in-out;
+}
+
+.text-zoom-out {
+  transform: scale(0); /* Adjust the scale factor as needed */
+  transition: transform 1s ease-in-out;
 }
 
 /* ************************** */
@@ -122,4 +117,355 @@
   transition: 1s;
   width: 100%;
   height: 100%;
+}
+
+/* ----------------------------------------------------- */
+/*                START OTA SECTION AREA STYLE
+/* ----------------------------------------------------- */
+
+.ota-title-color-part {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(24deg, #4502fa, #ea01ec);
+  display: inline-block;
+}
+
+.ota-title-area p {
+  color: var(--para-color);
+}
+
+/* .ota-moon-bg {
+  background: url("./images/shape/Vector.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%; 
+} */
+
+.ota-moon-bg img {
+  width: 421px;
+  max-width: 100%;
+}
+
+.ota-body-area p {
+  color: var(--para-color);
+}
+
+.ota-moon-bg .ota-bg-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ota-bg-rock {
+  width: 80px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* comment blockquote */
+.comment-blockquote p {
+  color: var(--para-color);
+}
+
+/* ota content area */
+.ota-content-box {
+  color: var(--para-color);
+  box-shadow: 0px 4px 7px 0px #0000001a;
+  /* padding: 10px; */
+}
+.ota-content-box h3 {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(24deg, #4502fa, #ea01ec);
+  display: inline-block;
+  font-weight: 600;
+}
+
+.ota-content-btn {
+  z-index: 5;
+  color: #7b7583;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  transition: 0.5s;
+  display: inline-block;
+  width: 146px;
+  max-width: 100%;
+}
+
+.ota-content-btn:hover i {
+  margin-left: 15px;
+}
+
+.slick-slide {
+  margin: 10px;
+}
+/* the parent */
+.slick-list {
+  margin: -10px;
+}
+
+.ota-content-icon svg {
+  width: 40px;
+  height: 40px;
+}
+
+/* ----------------------------------------------------- */
+/*                ENHANCE SECTION AREA STYLE
+/* ----------------------------------------------------- */
+
+.enhance-title-area p {
+  color: var(--para-color);
+}
+
+.c-gtr-system-single-items,
+.enhance-body-single-items {
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+.enhance-body-single-items p {
+  color: var(--para-color);
+}
+
+.enhance-body-icon svg {
+  width: 40px;
+  height: 40px;
+}
+
+/* ----------------------------------------------------- */
+/*           CHOOSE GTR SYSTEM SECTION AREA STYLE
+/* ----------------------------------------------------- */
+
+.c-gtr-system-single-items p {
+  color: var(--para-color);
+}
+.slick-prev {
+  left: -5%;
+  transition: 0.5s;
+}
+.slick-next {
+  right: -5%;
+  transition: 0.5s;
+}
+
+.ota-slider:hover .slick-next {
+  right: -4%;
+}
+.ota-slider:hover .slick-prev {
+  left: -4%;
+}
+
+.slick-prev,
+.slick-next {
+  border: none; /* Remove border */
+  color: #333333; /* Set text color */
+  font-size: 24px; /* Set font size for the icon */
+  padding: 10px; /* Add padding around the icon */
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(24deg, #4502fa, #ea01ec);
+  display: inline-block;
+  font-weight: 600;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  background-color: red; /* Set hover background color */
+}
+
+.slick-next:focus,
+.slick-next:hover,
+.slick-prev:focus,
+.slick-prev:hover {
+  color: #000;
+  outline: 0;
+  background: transparent;
+}
+
+.slick-next:before,
+.slick-prev:before {
+  font-family: slick;
+  font-size: 20px;
+  line-height: 1;
+  opacity: 1;
+  color: #da0000;
+  -webkit-font-smoothing: antialiased;
+  /* visibility: hidden !important; */
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-next::before {
+  content: "" !important;
+  background-color: transparent !important;
+}
+.slick-prev::before {
+  content: "" !important;
+  background-color: transparent !important;
+}
+
+/* ----------------------------------------------------- */
+/*           CHOOSE GTR SYSTEM SECTION AREA STYLE
+/* ----------------------------------------------------- */
+
+.feature-single-items p {
+  color: var(--para-color);
+}
+
+/* ----------------------------------------------------- */
+/*          START GTR PROUD SECTION ARE STYLE
+/* ----------------------------------------------------- */
+
+.blockquote-name span {
+  display: inline-block;
+  width: 30px;
+  height: 2px;
+  margin-right: 2px;
+}
+
+/* ----------------------------------------------------- */
+/*          START POWER OF GTR SECTION ARE STYLE
+/* ----------------------------------------------------- */
+.power-of-gtr-single-items {
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.power-of-gtr-article {
+  position: relative;
+}
+
+.power-of-gtr-article::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  background: rgb(255, 255, 255);
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 58%,
+    rgba(255, 255, 255, 1) 76%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 58%,
+    rgba(255, 255, 255, 1) 76%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 58%,
+    rgba(255, 255, 255, 1) 76%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+}
+
+.power-images-content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 5%;
+}
+
+/* ----------------------------------------------------- */
+/*          START FOOTER SECTION ARE STYLE
+/* ----------------------------------------------------- */
+
+.footer-area {
+  background: #f0f0f0;
+}
+
+.footer-area-single-items ul li {
+  color: var(--para-color);
+  font-family: "Lexend", sans-serif;
+}
+
+/* ----------------------------------------------------- */
+/*          START HOME PAGE 2 ARE STYLE
+/* ----------------------------------------------------- */
+
+.section-header-gtr-news-insights {
+  background: url("./images/gtr-news-insights/home-2-bg.png");
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+.section-header-gtr-news-insights::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: rgb(255, 255, 255);
+  background: -moz-linear-gradient(
+    80deg,
+    rgba(255, 255, 255, 1) 21%,
+    rgba(255, 255, 255, 0) 75%
+  );
+  background: -webkit-linear-gradient(
+    80deg,
+    rgba(255, 255, 255, 1) 21%,
+    rgba(255, 255, 255, 0) 75%
+  );
+  background: linear-gradient(
+    80deg,
+    rgba(255, 255, 255, 1) 21%,
+    rgba(255, 255, 255, 0) 75%
+  );
+  z-index: -1;
+}
+
+/* ----------------------------------------------------- */
+/*     START NEWS AND INSIGHTS FEATURE POST ARE STYLE
+/* ----------------------------------------------------- */
+
+.feature-all-post-box {
+  transition: 0.5s;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.feature-all-post-box:hover {
+  background-color: #f7f3ff;
+}
+
+/* ----------------------------------------------------- */
+/*    START NEWS AND INSIGHTS CATEGORIES  AREA STYLE
+/* ----------------------------------------------------- */
+
+.gtr-categories-article {
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.gtr-categories-article:hover {
+  background-color: #f7f3ff;
+}
+
+.grt-catagories-icon svg {
+  width: 25px;
+  height: 25px;
 }
