@@ -9,6 +9,36 @@ try {
     const menuOverly = document.querySelector(".menu-overly")
 
 
+    //Menu active
+    // let scrollBar = document.querySelector('.navigation-bar');
+    // window.addEventListener('scroll', () => {
+
+    //     if (window.pageYOffset < 100) {
+    //         //scrollBar.classList.add('rakibul')
+    //         scrollBar.classList.remove('nav-action');
+
+    //         scrollBar.style.transition = '5s';
+
+    //         scrollBar.style.opacity = '1';
+    //     } else {
+    //         scrollBar.classList.add('nav-action')
+    //         // scrollBar.style.opacity = '0';
+    //     }
+
+    //     if (this.window.scrollBy) {
+
+    //     }
+    // })
+
+    // e-shop menu sticky effects
+    window.addEventListener('scroll', () => {
+        var navigation = document.querySelector('.navigation-bar');
+        navigation.classList.toggle('navbar-sticky', window.scrollY > 0);
+    })
+
+
+
+
     // Scroll to specific values
     // scrollTo is the same
     window.scroll({
@@ -292,6 +322,49 @@ try {
         easing: 'ease-in-out',
         arrows: false
     });
+
+
+
+    // gtr-testimonial-slider
+    // $(".gtr-testimonial-slider").slick({
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
+    //     autoplay: true,
+    //     autoplaySpeed: 4000,
+    //     infinite: true,
+    //     speed: 2500,
+    //     easing: 'ease-in-out',
+    //     arrows: true,
+    //     prevArrow: '<button type="button" class="slick-prev gtr-testimonial-slider-left"><i class="fa-solid fa-arrow-left-long"></i></button>',
+    //     nextArrow: '<button type="button" class="slick-next gtr-testimonial-slider-right"><i class="fa-solid fa-arrow-right-long"></i></button>',
+    // });
+
+    // JavaScript to toggle the modal
+    const modalOverlay = document.getElementById('modal-overlay');
+    const modal = document.getElementById('modal');
+    const closeModalButton = document.getElementById('close-modal');
+    const openModalButton = document.getElementById('open-modal');
+
+    const openModal = () => {
+        modalOverlay.style.pointerEvents = 'auto';
+        modalOverlay.classList.remove('hidden');
+        modal.classList.remove('hidden');
+    };
+
+    const closeModal = () => {
+        modalOverlay.style.pointerEvents = 'none';
+        modalOverlay.classList.add('hidden');
+        modal.classList.add('hidden');
+    };
+
+    closeModalButton.addEventListener('click', closeModal);
+    openModalButton.addEventListener('click', openModal);
+
+    // Close the modal when clicking on the overlay
+    modalOverlay.addEventListener('click', () => {
+        closeModal();
+    });
+
 
 
 

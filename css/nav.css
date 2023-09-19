@@ -1,3 +1,9 @@
+.navbar {
+  padding: 25px 0;
+  transition: all 0.5s;
+  backdrop-filter: blur(20px);
+}
+
 .nav-social li,
 .navbar-nav .nav-items {
   margin: 5px 10px;
@@ -16,13 +22,14 @@
 }
 
 .navbar .navbar-brand {
-  width: 150px;
+  width: 200px;
   max-width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
   cursor: pointer;
+  transition: all 0.5s;
 }
 
 .dropdown .dropdown-items .dropdown-link,
@@ -233,4 +240,32 @@ li.dropdown-items {
   visibility: visible;
   opacity: 1;
   z-index: 99;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Navigation bar animated and fixed top active */
+/* -------------------------------------------------------------------------- */
+
+/* nav sticky */
+.navbar-sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 0;
+  z-index: 99;
+}
+
+.navbar-sticky .navbar-brand {
+  width: 150px;
+  transition: all 0.5s;
+}
+
+/* Apply backdrop-filter if supported */
+@supports (-webkit-backdrop-filter: blur(20px)) or (backdrop-filter: blur(20px)) {
+  .navbar-sticky {
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    background: rgba(0, 75, 0, 0.137);
+  }
 }
