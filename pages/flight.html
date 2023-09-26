@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GTR system</title>
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/178ebc03bb.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- slick slider -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+
+    <!-- Tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- reset css -->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <!-- Navbar -->
+    <link rel="stylesheet" href="../css/nav.css" />
+    <!-- shape -->
+    <link rel="stylesheet" href="../css/shape.css" />
+    <!-- button css -->
+    <link rel="stylesheet" href="../css/button.css" />
+    <!-- social icons -->
+    <link rel="stylesheet" href="../css/social-icons.css" />
+    <!-- main style sheet -->
+    <link rel="stylesheet" href="../style.css" />
+    <!-- responsive css -->
+    <link rel="stylesheet" href="../css/responsive.css" />
+  </head>
+  <body>
+    <div id="gtr-system">
+      <div class="section-header fight-page-area">
+        <div class="menu-overly"></div>
+        <!-- off canvas menu -->
+        <nav
+          class="navbar lg:hidden flex items-start justify-start offcanvas-menu"
+        >
+          <div class="offcanvas-close">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <div class="gtr-box-container p-4">
+            <!-- navbar brand -->
+            <a href="./index.html" class="navbar-brand">
+              <img
+                src="../images/logo/logo.png"
+                class="w-full navbar-brand-logo"
+                alt=""
+              />
+            </a>
+
+            <!-- navbar link -->
+            <div class="navbar-link-and-social mt-7">
+              <ul class="navbar-nav">
+                <li class="nav-items">
+                  <a href="../index.html" class="nav-link"
+                    >Home
+                    <!-- <i class="fa-solid fa-angle-down"></i> -->
+                  </a>
+                  <!-- dropdown -->
+                  <!-- <ul class="dropdown">
+                    <li class="dropdown-items">
+                      <a href="./pages/gtr-news-insights.html" class="dropdown-link"
+                        >Home 2</a
+                      >
+                    </li>
+                  </ul> -->
+                </li>
+                <li class="nav-items">
+                  <a href="#" class="nav-link">Products</a>
+                </li>
+                <li class="nav-items">
+                  <a href="#" class="nav-link">Industries</a>
+                </li>
+                <li class="nav-items">
+                  <a href="../pages/news-insights.html" class="nav-link"
+                    >news & insights</a
+                  >
+                </li>
+                <li class="nav-items">
+                  <a href="#" class="nav-link">about us</a>
+                </li>
+              </ul>
+
+              <!-- navbar social icons -->
+              <div class="relative">
+                <ul
+                  class="nav-social flex items-center justify-start mt-2 max-w-full"
+                >
+                  <li class="social-items">
+                    <a href="#" class="social-link"
+                      ><i class="fa-brands fa-facebook-f"></i
+                    ></a>
+                  </li>
+                  <li class="social-items">
+                    <a href="#" class="social-link"
+                      ><i class="fa-brands fa-twitter"></i
+                    ></a>
+                  </li>
+                  <li class="social-items">
+                    <a href="#" class="social-link"
+                      ><i class="fa-brands fa-instagram"></i
+                    ></a>
+                  </li>
+                  <li class="social-items">
+                    <a href="#" class="social-link"
+                      ><i class="fa-brands fa-youtube"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Navigation bar -->
+        <nav class="navbar navigation-bar bg-[#ffffff66]">
+          <div class="gtr-box-container flex items-center justify-between py-3">
+            <!-- navbar brand -->
+            <a href="../index.html" class="navbar-brand">
+              <img
+                src="../images/logo/logo.png"
+                class="w-full navbar-brand-logo"
+                alt=""
+              />
+            </a>
+
+            <!-- navbar link -->
+            <div class="lg:block hidden">
+              <div
+                class="navbar-link-and-social flex items-center justify-between"
+              >
+                <ul class="navbar-nav flex items-center justify-between">
+                  <li class="nav-items flex items-center justify-center">
+                    <a href="../index.html" class="nav-link">Home </a>
+
+                    <!-- dropdown -->
+                    <!-- <ul class="dropdown">
+                      <li class="dropdown-items">
+                        <a href="./pages/gtr-news-insights.html" class="dropdown-link"
+                          >Home 2</a
+                        >
+                      </li>
+                    </ul> -->
+                  </li>
+                  <li class="nav-items">
+                    <a href="#" class="nav-link">Products</a>
+                  </li>
+                  <li class="nav-items">
+                    <a href="#" class="nav-link">Industries</a>
+                  </li>
+                  <li class="nav-items">
+                    <a href="../pages/news-insights.html" class="nav-link"
+                      >news & insights</a
+                    >
+                  </li>
+                  <li class="nav-items">
+                    <a href="#" class="nav-link">about us</a>
+                  </li>
+                </ul>
+
+                <!-- navbar social icons -->
+                <ul class="nav-social flex items-center justify-between ml-12">
+                  <li class="social-items">
+                    <a href="#" class="social-link"
+                      ><i class="fa-brands fa-facebook-f"></i
+                    ></a>
+                  </li>
+                  <li class="social-items">
+                    <a href="#" class="social-link"
+                      ><i class="fa-brands fa-twitter"></i
+                    ></a>
+                  </li>
+                  <li class="social-items">
+                    <a href="#" class="social-link"
+                      ><i class="fa-brands fa-instagram"></i
+                    ></a>
+                  </li>
+                  <li class="social-items">
+                    <a href="#" class="social-link"
+                      ><i class="fa-brands fa-youtube"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- navbar toggler icons -->
+            <div class="navbar-toggler-icons lg:hidden">
+              <div class="hamburger-wrap">
+                <div class="hamburger">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <!----------------------START NEWS INSIGHTS AREA-------------------->
+        <section class="pt-16">
+          <div class="gtr-news-insights">
+            <div class="gtr-box-container">
+              <article
+                class="text-[#5b5b5b] max-w-full w-full md:w-[50%] max-h-screen flex items-start justify-center flex-col max-h-full py-16 sm:py-28 md:py-36 lg:py-40"
+              >
+                <h1
+                  class="text-2xl sm:text-5xl md:text-5xl text-[#0F051D] uppercase font-bold"
+                >
+                  Counting Stars, Not Airlines: Where We Embrace All Public
+                  Carriers
+                </h1>
+
+                <p class="mt-4 text-[#5b5b5b]">
+                  Get ready to soar with GTRSystem! We're into bigger and better
+                  things. Say hello to the aviation world's A-listers,
+                  handpicked for your journey of a lifetime See more...
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+        <!----------------------END OF NEWS INSIGHTS AREA-------------------->
+      </div>
+
+      <div class="gtr-body">
+        <!----------------------START FLIGHT TOP ARTICLE AREA-------------------->
+        <section class="pt-7 md:pt-16">
+          <!-- article top title -->
+          <div
+            class="gtr-box-container flight-top-article-title mx-auto text-center"
+          >
+            <h1 class="text-2xl md:text-3xl font-bold capitalize py-3">
+              <span class="flight-title-color-part">We're not just</span>
+              <br />
+              another platform
+            </h1>
+          </div>
+
+          <!-- flight to article -->
+          <div class="mt-4">
+            <div class="gtr-box-container">
+              <article class="w-full md:w-[75%] mx-auto text-center">
+                <p class="text-md md:text-base py-1">
+                  we're your travel wonderland. Our GDS feeds are like a
+                  symphony originating from various Points of Sale (POS) around
+                  the globe. Our LCC feeds are pure magic of multiple LCC hubs
+                  strategically located all over the world! We've got a network
+                  that can bring you exceptional rates that'll make you do a
+                  double take. We've got rates that'll give your budget a big
+                  smile.
+                </p>
+
+                <p class="text-md md:text-base py-1 mt-5">
+                  SSR requests are seamlessly automated in most cases. Our
+                  dedicated team operates around the clock to ensure flawless
+                  check-ins and ticket reissues for your clients during
+                  post-production requests. Say goodbye to delays with our
+                  automated ticketing process. Book, click, voila – your
+                  ticket's in your inbox faster than you can say "adventure!"
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+        <!----------------------END OF FLIGHT TOP ARTICLE AREA-------------------->
+
+        <!----------------------START FLIGHT PRODUCT FEATURE ARTICLE AREA-------------------->
+        <section class="pt-7 md:pt-16">
+          <!-- FLIGHT PRODUCT FEATURE TITLE -->
+          <div
+            class="gtr-box-container flight-product-feature-title mx-auto text-center"
+          >
+            <h1 class="text-2xl md:text-3xl font-bold capitalize py-3">
+              Product
+              <span class="flight-product-feature-title-color-part"
+                >features</span
+              >
+            </h1>
+          </div>
+
+          <!-- fight product feature content -->
+          <div class="fight-product-feature-content mt-7">
+            <div class="gtr-box-container">
+              <div
+                class="fight-product-feature-box grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-7 w-full md:w-[75%] mx-auto text-center place-items-center justify-center items-center"
+              >
+                <!-- content 01 -->
+                <div class="fight-product-feature-items rounded-xl h-full">
+                  <article class="px-1 md:p-7 py-12 h-full">
+                    <div
+                      class="fight-product-feature-icon mx-auto flex items-center justify-center"
+                    >
+                      <svg
+                        width="64"
+                        height="64"
+                        viewBox="0 0 64 64"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_550_20)">
+                          <path
+                            d="M8 44.3333H18.6667L26.6667 65.6667L37.3333 23L45.3333 44.3333H56"
+                            stroke="url(#paint0_linear_550_20)"
+                            stroke-width="5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </g>
+                        <defs>
+                          <linearGradient
+                            id="paint0_linear_550_20"
+                            x1="48.1262"
+                            y1="60.9515"
+                            x2="24.5992"
+                            y2="20.8561"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="#3400FB" />
+                            <stop offset="1" stop-color="#BE00EF" />
+                          </linearGradient>
+                          <clipPath id="clip0_550_20">
+                            <rect width="64" height="64" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </div>
+
+                    <h3 class="text-base md:text-xl py-1 mt-4">
+                      Broad Content
+                    </h3>
+                    <p class="text-md md:text-base py-1">
+                      Connectivity and policy filtered aggregation of multiple
+                      content sources including NDC.
+                    </p>
+                  </article>
+                </div>
+
+                <!-- content 02 -->
+                <div class="fight-product-feature-items rounded-xl h-full">
+                  <article class="px-1 md:p-7 py-12 h-full">
+                    <div
+                      class="fight-product-feature-icon mx-auto flex items-center justify-center"
+                    >
+                      <svg
+                        width="64"
+                        height="64"
+                        viewBox="0 0 64 64"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_550_20)">
+                          <path
+                            d="M8 44.3333H18.6667L26.6667 65.6667L37.3333 23L45.3333 44.3333H56"
+                            stroke="url(#paint0_linear_550_20)"
+                            stroke-width="5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </g>
+                        <defs>
+                          <linearGradient
+                            id="paint0_linear_550_20"
+                            x1="48.1262"
+                            y1="60.9515"
+                            x2="24.5992"
+                            y2="20.8561"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="#3400FB" />
+                            <stop offset="1" stop-color="#BE00EF" />
+                          </linearGradient>
+                          <clipPath id="clip0_550_20">
+                            <rect width="64" height="64" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </div>
+
+                    <h3 class="text-base md:text-xl py-1 mt-4">
+                      Real-time schedule updates
+                    </h3>
+                    <p class="text-md md:text-base py-1">
+                      Receive real-time updates for the airlines’ most
+                      up-to-date schedules.
+                    </p>
+                  </article>
+                </div>
+
+                <!-- content 03 -->
+                <div class="fight-product-feature-items rounded-xl h-full">
+                  <article class="px-1 md:p-7 py-12 h-full">
+                    <div
+                      class="fight-product-feature-icon mx-auto flex items-center justify-center"
+                    >
+                      <svg
+                        width="64"
+                        height="64"
+                        viewBox="0 0 64 64"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_550_20)">
+                          <path
+                            d="M8 44.3333H18.6667L26.6667 65.6667L37.3333 23L45.3333 44.3333H56"
+                            stroke="url(#paint0_linear_550_20)"
+                            stroke-width="5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </g>
+                        <defs>
+                          <linearGradient
+                            id="paint0_linear_550_20"
+                            x1="48.1262"
+                            y1="60.9515"
+                            x2="24.5992"
+                            y2="20.8561"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="#3400FB" />
+                            <stop offset="1" stop-color="#BE00EF" />
+                          </linearGradient>
+                          <clipPath id="clip0_550_20">
+                            <rect width="64" height="64" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </div>
+
+                    <h3 class="text-base md:text-xl py-1 mt-4">
+                      Quick inventory access
+                    </h3>
+                    <p class="text-md md:text-base py-1">
+                      Get accurate availability for the best available fares.
+                    </p>
+                  </article>
+                </div>
+
+                <!-- content 04 -->
+                <div class="fight-product-feature-items rounded-xl h-full">
+                  <article class="px-1 md:p-7 py-12 h-full">
+                    <div
+                      class="fight-product-feature-icon mx-auto flex items-center justify-center"
+                    >
+                      <svg
+                        width="64"
+                        height="64"
+                        viewBox="0 0 64 64"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_550_20)">
+                          <path
+                            d="M8 44.3333H18.6667L26.6667 65.6667L37.3333 23L45.3333 44.3333H56"
+                            stroke="url(#paint0_linear_550_20)"
+                            stroke-width="5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </g>
+                        <defs>
+                          <linearGradient
+                            id="paint0_linear_550_20"
+                            x1="48.1262"
+                            y1="60.9515"
+                            x2="24.5992"
+                            y2="20.8561"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="#3400FB" />
+                            <stop offset="1" stop-color="#BE00EF" />
+                          </linearGradient>
+                          <clipPath id="clip0_550_20">
+                            <rect width="64" height="64" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </div>
+
+                    <h3 class="text-base md:text-xl py-1 mt-4">
+                      Highest level of automation
+                    </h3>
+                    <p class="text-md md:text-base py-1">
+                      Reference the airline-filed Category 33 Voluntary Refunds
+                      to calculate refund amounts and penalties in seconds. Save
+                      up to 5 minutes per ticket refund.
+                    </p>
+                  </article>
+                </div>
+
+                <!-- content 05 -->
+                <div class="fight-product-feature-items rounded-xl h-full">
+                  <article class="px-1 md:p-7 py-12 h-full">
+                    <div
+                      class="fight-product-feature-icon mx-auto flex items-center justify-center"
+                    >
+                      <svg
+                        width="64"
+                        height="64"
+                        viewBox="0 0 64 64"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_550_20)">
+                          <path
+                            d="M8 44.3333H18.6667L26.6667 65.6667L37.3333 23L45.3333 44.3333H56"
+                            stroke="url(#paint0_linear_550_20)"
+                            stroke-width="5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </g>
+                        <defs>
+                          <linearGradient
+                            id="paint0_linear_550_20"
+                            x1="48.1262"
+                            y1="60.9515"
+                            x2="24.5992"
+                            y2="20.8561"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="#3400FB" />
+                            <stop offset="1" stop-color="#BE00EF" />
+                          </linearGradient>
+                          <clipPath id="clip0_550_20">
+                            <rect width="64" height="64" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </div>
+
+                    <h3 class="text-base md:text-xl py-1 mt-4">
+                      Agency revenue protection
+                    </h3>
+                    <p class="text-md md:text-base py-1">
+                      Eliminate complex manual calculations that are subject to
+                      errors. Reduce debit memo exposure since results are
+                      included in the Sabre Fare Guarantee Policy.
+                    </p>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!----------------------END OF FLIGHT PRODUCT FEATURE ARTICLE AREA-------------------->
+
+        <!----------------------START FLIGHT AIRLINES AREA-------------------->
+        <section class="pt-7 md:pt-16">
+          <!-- fight airlines title -->
+          <div class="gtr-box-container">
+            <div
+              class="flight-airlines-title w-full md:w-[40%] mx-auto text-center"
+            >
+              <h1 class="text-2xl md:text-3xl font-bold capitalize py-3">
+                The Most Current Content for
+                <span class="flight-airlines-title-color-part"
+                  >Over 400 Airlines</span
+                >
+              </h1>
+            </div>
+          </div>
+
+          <!-- flight airlines article -->
+          <div class="flight-airlines-article mt-7">
+            <div class="gtr-box-container">
+              <article class="w-full md:w-[75%] mx-auto text-center">
+                <p class="text-md md:text-base py-1">
+                  With real-time updates, travel agencies can tap into the
+                  airlines’ most up-to-date content, ensuring schedules that are
+                  as accurate as possible. At the same time, reliable
+                  availability ensures that all the best fare options are
+                  displayed and accessible for creating itinerary options across
+                  over 400 airlines globally.
+                </p>
+              </article>
+
+              <!-- JOIN OUR COMMUNITY -->
+              <div class="JOIN-OUR-COMMUNITY text-center pt-16">
+                <div class="w-full md:w-[50%] mx-auto">
+                  <h1 class="text-2xl md:text-3xl font-bold py-3">
+                    We are trusted by over 5000+ clients. Join us now and grow
+                    your business.
+                  </h1>
+
+                  <!-- btn -->
+                  <a href="#" type="button" class="gtr-btn global-btn mt-7"
+                    ><span>
+                      know more <i class="fa-solid fa-arrow-trend-up"></i></span
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!----------------------END OF FLIGHT AIRLINES AREA-------------------->
+      </div>
+      <!-- end gtr body -->
+
+      <!----------------------START FOOTER SECTION AREA-------------------->
+      <footer class="footer-area p-4 mt-16">
+        <div class="gtr-box-container">
+          <div
+            class="footer-area-box grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 lg:grid-cols-4 gap-4"
+          >
+            <!-- footer column 01 -->
+            <div class="footer-area-single-items">
+              <article>
+                <h3 class="text-lg md:text-xl py-1 md:py-3">1000+</h3>
+                <p class="text-md md:text-base">Completed Projects</p>
+              </article>
+            </div>
+            <!-- footer column 02 -->
+            <div class="footer-area-single-items">
+              <article>
+                <h3 class="text-lg md:text-xl py-1 md:py-3">Get in Touch</h3>
+                <p class="text-md md:text-base">
+                  Global Travel Reservation System Pte. Ltd. (TA: 03048)
+                </p>
+              </article>
+            </div>
+            <!-- footer column 03 -->
+            <div class="footer-area-single-items">
+              <article>
+                <h3 class="text-lg md:text-xl py-1 md:py-3">Learn More</h3>
+                <ul>
+                  <li class="text-md md:text-base"><a href="#">Products</a></li>
+                  <li class="text-md md:text-base">
+                    <a href="#">Industries</a>
+                  </li>
+                  <li class="text-md md:text-base">
+                    <a href="#">News & Insights</a>
+                  </li>
+                  <li class="text-md md:text-base"><a href="#">About Us</a></li>
+                </ul>
+              </article>
+            </div>
+            <!-- footer column 04 -->
+            <div class="footer-area-single-items">
+              <article>
+                <h3 class="text-lg md:text-xl py-1 md:py-3">Our Newsletter</h3>
+                <p class="text-md md:text-base">
+                  Subscribr to our newsletter to get
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!----------------------END OF FOOTER SECTION AREA-------------------->
+    </div>
+    <!-- script file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- slick end -->
+    <!-- <script src="./js/textAnimation.js"></script> -->
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>

@@ -1,7 +1,10 @@
 .navbar {
   padding: 25px 0;
   transition: all 0.5s;
+  position: fixed;
+  width: 100%;
   backdrop-filter: blur(20px);
+  z-index: 99;
 }
 
 .nav-social li,
@@ -62,12 +65,15 @@
   position: fixed;
   top: 0;
   left: -999px;
-  background: #fff;
+  /* background: #ffffff54; */
   width: 300px;
   max-width: 100%;
   transition: all 0.5s;
   height: 100%;
-  z-index: 9;
+  z-index: 100;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.7);
 }
 
 .offcanvas-trigger {

@@ -9,6 +9,12 @@ try {
     const menuOverly = document.querySelector(".menu-overly")
 
 
+    function pageScroll() {
+        window.scrollTo(0, 0);
+    }
+
+
+
     //Menu active
     // let scrollBar = document.querySelector('.navigation-bar');
     // window.addEventListener('scroll', () => {
@@ -35,25 +41,6 @@ try {
         var navigation = document.querySelector('.navigation-bar');
         navigation.classList.toggle('navbar-sticky', window.scrollY > 0);
     })
-
-
-
-
-    // Scroll to specific values
-    // scrollTo is the same
-    window.scroll({
-        top: 2500,
-        left: 0,
-        behavior: 'smooth'
-    });
-
-    // Scroll certain amounts from current position 
-    window.scrollBy({
-        top: 100, // could be negative value
-        left: 0,
-        behavior: 'smooth'
-    });
-
 
 
 
@@ -107,15 +94,38 @@ try {
 
 
     // slick slider active
-    $(".gtr-slider").slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 5000,
-        fade: true,
-        cssEase: 'linear',
-        arrows: false,
+    // $(".gtr-slider").slick({
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
+    //     autoplay: true,
+    //     autoplaySpeed: 5000,
+    //     fade: true,
+    //     cssEase: 'linear',
+    //     arrows: false,
+    // });
+
+    $(document).ready(function () {
+        var slider = $(".gtr-slider");
+
+        slider.slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            fade: true,
+            cssEase: 'linear',
+            arrows: false,
+        });
+
+        slider.on('mouseenter', function () {
+            slider.slick('slickPlay');
+        });
+
+        slider.on('mouseleave', function () {
+            slider.slick('slickPlay');
+        });
     });
+
 
 
 
@@ -279,8 +289,8 @@ try {
         easing: 'ease-in-out', // Apply easing for smoother transitions
         arrows: true,
         dots: true,
-        prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
-        nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>',
+        prevArrow: '<button type="button" class="slick-prev ota-slider-prev"><i class="fas fa-chevron-left"></i></button>',
+        nextArrow: '<button type="button" class="slick-next ota-slider-next"><i class="fas fa-chevron-right"></i></button>',
         responsive: [
             {
                 breakpoint: 1024,
@@ -320,24 +330,25 @@ try {
         infinite: true,
         speed: 2500,
         easing: 'ease-in-out',
-        arrows: false
+        arrows: false,
+        dots: true
     });
 
 
 
     // gtr-testimonial-slider
-    // $(".gtr-testimonial-slider").slick({
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1,
-    //     autoplay: true,
-    //     autoplaySpeed: 4000,
-    //     infinite: true,
-    //     speed: 2500,
-    //     easing: 'ease-in-out',
-    //     arrows: true,
-    //     prevArrow: '<button type="button" class="slick-prev gtr-testimonial-slider-left"><i class="fa-solid fa-arrow-left-long"></i></button>',
-    //     nextArrow: '<button type="button" class="slick-next gtr-testimonial-slider-right"><i class="fa-solid fa-arrow-right-long"></i></button>',
-    // });
+    $(".gtr-testimonial-slider").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        infinite: true,
+        speed: 2500,
+        easing: 'ease-in-out',
+        arrows: true,
+        prevArrow: '<button type="button" class="slick-prev gtr-testimonial-slider-left"><i class="fa-solid fa-arrow-left-long"></i></button>',
+        nextArrow: '<button type="button" class="slick-next gtr-testimonial-slider-right"><i class="fa-solid fa-arrow-right-long"></i></button>',
+    });
 
     // JavaScript to toggle the modal
     const modalOverlay = document.getElementById('modal-overlay');

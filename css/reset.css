@@ -22,7 +22,6 @@ font-family: 'Lexend', sans-serif;
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
 }
 
 /* color */
@@ -45,11 +44,11 @@ body {
   box-sizing: border-box;
   font-smooth: inherit;
   scroll-behavior: smooth;
-  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 0.5s;
   width: 100%;
   height: auto;
+  scroll-margin-top: 0;
   font-family: "Lexend", sans-serif;
-
   background: rgb(231, 249, 255);
   background: -moz-linear-gradient(
     80deg,
@@ -70,7 +69,7 @@ body {
 /* -------------------------------------------------------------------------- */
 /* Container */
 /* -------------------------------------------------------------------------- */
-.gtr-container {
+.gtr-box-container {
   width: 95%;
   height: auto;
   max-width: 100%;
@@ -123,6 +122,12 @@ p {
   color: var(--para-color);
   font-family: "Lexend", sans-serif;
   font-weight: 300;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Example styling */
@@ -182,9 +187,19 @@ p {
   font-weight: 400;
   font-size: 14px;
   text-transform: uppercase;
+  transition: 0.5s;
 }
+
+/* .landing-btn:hover {
+  background: blue;
+  border-radius: 0px;
+} */
 /* section title color */
 
+.flight-airlines-title-color-part,
+.fight-product-feature-items h3,
+.flight-product-feature-title-color-part,
+.flight-top-article-title .flight-title-color-part,
 .author-details h4,
 .gtr-post-article-text-color small,
 .post-search-box-modal-header h4,
