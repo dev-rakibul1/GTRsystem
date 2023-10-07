@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GTR system</title>
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/178ebc03bb.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- slick slider -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+
+    <!-- Tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- reset css -->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <!-- Navbar -->
+    <link rel="stylesheet" href="../css/nav.css" />
+    <!-- shape -->
+    <link rel="stylesheet" href="../css/shape.css" />
+    <!-- button css -->
+    <link rel="stylesheet" href="../css/button.css" />
+    <!-- social icons -->
+    <link rel="stylesheet" href="../css/social-icons.css" />
+    <!-- main style sheet -->
+    <link rel="stylesheet" href="../style.css" />
+    <!-- responsive css -->
+    <link rel="stylesheet" href="../css/responsive.css" />
+  </head>
+  <body>
+    <div id="gtr-system">
+      <div class="section-header contact-us-hero-area">
+        <div class="menu-overly"></div>
+        <!-- off canvas menu -->
+        <nav
+          class="navbar lg:hidden flex items-start justify-start offcanvas-menu"
+        >
+          <div class="offcanvas-close">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <div class="gtr-box-container p-4">
+            <!-- navbar brand -->
+            <a href="./index.html" class="navbar-brand">
+              <img
+                src="../images/logo/logo.png"
+                class="w-full navbar-brand-logo"
+                alt=""
+              />
+            </a>
+
+            <!-- navbar link -->
+            <div class="navbar-link-and-social mt-7">
+              <ul class="navbar-nav">
+                <li class="nav-items">
+                  <a href="../index.html" class="nav-link"
+                    >Home
+                    <!-- <i class="fa-solid fa-angle-down"></i> -->
+                  </a>
+                  <!-- dropdown -->
+                  <!-- <ul class="dropdown">
+                    <li class="dropdown-items">
+                      <a href="./pages/gtr-news-insights.html" class="dropdown-link"
+                        >Home 2</a
+                      >
+                    </li>
+                  </ul> -->
+                </li>
+                <li class="nav-items">
+                  <a href="#" class="nav-link">Products</a>
+                </li>
+                <li class="nav-items">
+                  <a href="#" class="nav-link">Industries</a>
+                </li>
+                <li class="nav-items">
+                  <a href="../pages/news-insights.html" class="nav-link"
+                    >news & insights</a
+                  >
+                </li>
+                <li class="nav-items">
+                  <a href="#" class="nav-link">about us</a>
+                </li>
+
+                <li class="nav-items">
+                  <a href="../pages/contact-us.html" class="nav-link"
+                    >contact us</a
+                  >
+                </li>
+              </ul>
+
+              <!-- navbar social icons -->
+              <div class="relative">
+                <ul
+                  class="nav-social flex items-center justify-start mt-2 max-w-full"
+                >
+                  <li class="social-items">
+                    <a href="#" class="social-link"
+                      ><i class="fa-brands fa-facebook-f"></i
+                    ></a>
+                  </li>
+                  <li class="social-items">
+                    <a href="#" class="social-link"
+                      ><i class="fa-brands fa-twitter"></i
+                    ></a>
+                  </li>
+                  <li class="social-items">
+                    <a href="#" class="social-link"
+                      ><i class="fa-brands fa-instagram"></i
+                    ></a>
+                  </li>
+                  <li class="social-items">
+                    <a href="#" class="social-link"
+                      ><i class="fa-brands fa-youtube"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Navigation bar -->
+        <nav class="navbar navigation-bar">
+          <div class="gtr-box-container flex items-center justify-between py-3">
+            <!-- navbar brand -->
+            <a href="../index.html" class="navbar-brand">
+              <img
+                src="../images/logo/logo.png"
+                class="w-full navbar-brand-logo"
+                alt=""
+              />
+            </a>
+
+            <!-- navbar link -->
+            <div class="lg:block hidden">
+              <div
+                class="navbar-link-and-social flex items-center justify-between"
+              >
+                <ul class="navbar-nav flex items-center justify-between">
+                  <li class="nav-items flex items-center justify-center">
+                    <a href="../index.html" class="nav-link">Home </a>
+
+                    <!-- dropdown -->
+                    <!-- <ul class="dropdown">
+                      <li class="dropdown-items">
+                        <a href="./pages/gtr-news-insights.html" class="dropdown-link"
+                          >Home 2</a
+                        >
+                      </li>
+                    </ul> -->
+                  </li>
+                  <li class="nav-items">
+                    <a href="#" class="nav-link">Products</a>
+                  </li>
+                  <li class="nav-items">
+                    <a href="#" class="nav-link">Industries</a>
+                  </li>
+                  <li class="nav-items">
+                    <a href="../pages/news-insights.html" class="nav-link"
+                      >news & insights</a
+                    >
+                  </li>
+                  <li class="nav-items">
+                    <a href="#" class="nav-link">about us</a>
+                  </li>
+
+                  <li class="nav-items">
+                    <a href="../pages/contact-us.html" class="nav-link"
+                      >contact us</a
+                    >
+                  </li>
+                </ul>
+
+                <!-- navbar social icons -->
+                <ul class="nav-social flex items-center justify-between ml-12">
+                  <li class="social-items">
+                    <a href="#" class="social-link"
+                      ><i class="fa-brands fa-facebook-f"></i
+                    ></a>
+                  </li>
+                  <li class="social-items">
+                    <a href="#" class="social-link"
+                      ><i class="fa-brands fa-twitter"></i
+                    ></a>
+                  </li>
+                  <li class="social-items">
+                    <a href="#" class="social-link"
+                      ><i class="fa-brands fa-instagram"></i
+                    ></a>
+                  </li>
+                  <li class="social-items">
+                    <a href="#" class="social-link"
+                      ><i class="fa-brands fa-youtube"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- navbar toggler icons -->
+            <div class="navbar-toggler-icons lg:hidden">
+              <div class="hamburger-wrap">
+                <div class="hamburger">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <!-- contact hero -->
+        <div class="gtr-box-container z-10">
+          <div
+            class="flex items-center justify-center"
+            style="min-height: 60vh"
+          >
+            <h1 class="text-white text-5xl font-black">Contact us</h1>
+          </div>
+        </div>
+      </div>
+
+      <!-- Start gtr body area -->
+      <div class="gtr-body pt-16">
+        <!-----START CONTACT US PAGE CONTACT WITH ME SECTION AREA---->
+        <section class="mt-16">
+          <div class="contact-us-page-area">
+            <!-- contact title area -->
+            <div class="w-full mx-auto md:w-[50%] text-center px-2">
+              <h1 class="text-2xl md:text-3xl font-bold capitalize py-3">
+                get in touch
+                <span class="text-gradient">with us</span>
+              </h1>
+              <p class="text-md md:text-base py-1">
+                Connect your own GDS content on your Own Branded Platform drive
+                to your own subagent network with our organized content like no
+                one can offer before.
+              </p>
+            </div>
+
+            <!-- contact us bottom  -->
+            <div class="contact-us-bottom-part mt-7">
+              <div class="gtr-box-container">
+                <div
+                  class="contact-us-information grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-7"
+                >
+                  <!-- contact items 01 -->
+                  <div class="contact-us-info-box">
+                    <article
+                      class="text-center sm:text-left sm:flex items-center justify-center"
+                    >
+                      <div
+                        class="flex sm:flex-none justify-center items-center"
+                      >
+                        <img
+                          src="../images/contact/map.png"
+                          class="w-[80px] max-w-full"
+                          alt="map"
+                        />
+                      </div>
+                      <div class="mt-4 sm:mt-0 sm:ml-4">
+                        <h4 class="text-lg md:text-xl py-1 md:py-1">Office</h4>
+                        <p class="text-md md:text-base">
+                          Mr John Smith. 132, My Street, Bigtown BG23 4YZ.
+                          England.
+                        </p>
+                      </div>
+                    </article>
+                  </div>
+
+                  <!-- contact items 02 -->
+                  <div class="contact-us-info-box">
+                    <article
+                      class="text-center sm:text-left sm:flex items-center justify-start"
+                    >
+                      <div
+                        class="flex sm:flex-none justify-center items-center"
+                      >
+                        <img
+                          src="../images/contact/smartphone.png"
+                          class="w-[80px] max-w-full"
+                          alt="smartphone"
+                        />
+                      </div>
+                      <div class="mt-4 sm:mt-0 sm:ml-4">
+                        <h4 class="text-lg md:text-xl py-1 md:py-1">Call us</h4>
+                        <p class="text-md md:text-base">+98 916 238 4574</p>
+                        <p class="text-md md:text-base">+64 7842 238 4574</p>
+                      </div>
+                    </article>
+                  </div>
+                  <!-- contact items 03 -->
+                  <div class="contact-us-info-box">
+                    <article
+                      class="text-center sm:text-left sm:flex items-center justify-start"
+                    >
+                      <div
+                        class="flex sm:flex-none justify-center items-center"
+                      >
+                        <img
+                          src="../images/contact/mail.png"
+                          class="w-[80px] max-w-full"
+                          alt="mail"
+                        />
+                      </div>
+                      <div class="mt-4 sm:mt-0 sm:ml-4">
+                        <h4 class="text-lg md:text-xl py-1 md:py-1">Send us</h4>
+                        <p class="text-md md:text-base">info@gtrsystem.com</p>
+                        <p class="text-md md:text-base">
+                          contact@gtrsystem.com
+                        </p>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-----END OF CONTACT US PAGE CONTACT WITH ME SECTION AREA---->
+
+        <!----------------------START CONTACT US PAGE & MAP AND FROM SECTION AREA-------------------->
+        <section class="pt-16">
+          <div class="map-and-form-area">
+            <div class="gtr-box-container">
+              <div class="map-and-form-box w-full grid md:grid-cols-12 gap-6">
+                <!-- map -->
+                <div class="relative w-full md:col-span-8">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233667.4993040087!2d90.25487418679428!3d23.781067238010092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2sDhaka!5e0!3m2!1sen!2sbd!4v1696683136102!5m2!1sen!2sbd"
+                    width="100%"
+                    height="100%"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    class="h-screen md:h-full"
+                  ></iframe>
+
+                  <div
+                    class="iframe-banner md:flex justify-between items-center bg-white p-4 rounded-md absolute bottom-0 left-0 gap-x-12 max-w-full m-7"
+                  >
+                    <div class="mx-auto">
+                      <article class="w-full md:w-[60%] mx-auto">
+                        <h6 class="font-extralight text-sm mb-1 uppercase">
+                          ADDRESS
+                        </h6>
+                        <p class="font-light text-[15px]">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit.
+                        </p>
+                      </article>
+                    </div>
+                    <div class="mt-4 md:mt-0">
+                      <article>
+                        <h6 class="font-extralight text-sm mb-1 uppercase">
+                          Email
+                        </h6>
+                        <p class="font-light text-[15px] text-blue-400">
+                          feedback@gtrsystem.com
+                        </p>
+                      </article>
+                      <article class="mt-4">
+                        <h6 class="font-extralight text-sm mb-1 uppercase">
+                          Phone
+                        </h6>
+                        <p class="font-light text-[15px]">123-456-7890</p>
+                      </article>
+                    </div>
+                  </div>
+                </div>
+                <!-- form -->
+                <div class="w-full md:col-span-4">
+                  <form class="w-full">
+                    <!-- name -->
+                    <div class="flex items-start justify-start flex-col w-full">
+                      <label for="name" class="font-extrabold text-[14px]">
+                        Name <span class="text-red-700">*</span>
+                      </label>
+                      <input
+                        required
+                        type="text"
+                        name="name"
+                        id="name"
+                        class="border w-full border-gray-300 h-11 rounded-md focus:border-blue-400 transition-all duration-500 p-2"
+                      />
+                    </div>
+
+                    <!-- Email -->
+                    <div
+                      class="flex items-start justify-start flex-col w-full mt-3"
+                    >
+                      <label for="email" class="font-extrabold text-[14px]">
+                        Email <span class="text-red-700">*</span>
+                      </label>
+                      <input
+                        required
+                        type="email"
+                        name="email"
+                        id="email"
+                        class="border w-full border-gray-300 h-11 rounded-md focus:border-blue-400 transition-all duration-500 p-2"
+                      />
+                    </div>
+
+                    <!-- Phone number -->
+                    <div
+                      class="flex items-start justify-start flex-col w-full mt-3"
+                    >
+                      <label for="phone" class="font-extrabold text-[14px]">
+                        Phone Number <span class="text-red-700">*</span>
+                      </label>
+                      <input
+                        required
+                        type="number"
+                        name="phone"
+                        id="phone"
+                        class="border w-full border-gray-300 h-11 rounded-md focus:border-blue-400 transition-all duration-500 p-2"
+                      />
+                    </div>
+
+                    <!-- Company name-->
+                    <div
+                      class="flex items-start justify-start flex-col w-full mt-3"
+                    >
+                      <label
+                        for="company-name"
+                        class="font-extrabold text-[14px]"
+                      >
+                        Company Name
+                      </label>
+                      <input
+                        required
+                        type="text"
+                        name="company"
+                        id="company-name"
+                        class="border w-full border-gray-300 h-11 rounded-md focus:border-blue-400 transition-all duration-500 p-2"
+                      />
+                    </div>
+
+                    <!-- country -->
+                    <div
+                      class="flex items-start justify-start flex-col w-full mt-3"
+                    >
+                      <label for="country" class="font-extrabold text-[14px]">
+                        Country <span class="text-red-700">*</span>
+                      </label>
+                      <input
+                        required
+                        type="text"
+                        name="country"
+                        id="country"
+                        class="border w-full border-gray-300 h-11 rounded-md focus:border-blue-400 transition-all duration-500 p-2"
+                      />
+                    </div>
+
+                    <!-- message -->
+                    <div
+                      class="flex items-start justify-start flex-col w-full mt-3"
+                    >
+                      <label for="message" class="font-extrabold text-[14px]">
+                        Message <span class="text-red-700">*</span>
+                      </label>
+                      <textarea
+                        name="message"
+                        required
+                        id="message"
+                        class="w-full border border-gray-300 h-16 rounded-md focus:border-blue-400 transition-all duration-500 p-2"
+                      ></textarea>
+                    </div>
+
+                    <!-- btn -->
+                    <button
+                      type="button"
+                      class="gtr-btn global-btn mt-7"
+                      type="submit"
+                    >
+                      <span>
+                        Get in touch
+                        <i class="fa-solid fa-arrow-trend-up"></i
+                      ></span>
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- JOIN OUR COMMUNITY -->
+          <div class="JOIN-OUR-COMMUNITY text-center pt-16">
+            <h4 class="text-xl uppercase">JOIN OUR COMMUNITY</h4>
+            <div class="w-full md:w-[50%] mx-auto">
+              <h1 class="text-2xl md:text-3xl font-bold py-3">
+                We are trusted by over 5000+ clients. Join us now and grow your
+                business.
+              </h1>
+
+              <!-- btn -->
+              <a href="#" type="button" class="gtr-btn global-btn mt-7"
+                ><span>
+                  know more <i class="fa-solid fa-arrow-trend-up"></i></span
+              ></a>
+            </div>
+          </div>
+        </section>
+        <!----------------------END OF CONTACT US PAGE & MAP AND FROM SECTION AREA-------------------->
+      </div>
+      <!-- end gtr body -->
+
+      <!----------------------START ALL POST PAGE & ALL POST SECTION AREA-------------------->
+      <footer class="footer-area p-4 pb-7 mt-7 md:mt-16">
+        <div class="gtr-box-container">
+          <div
+            class="footer-area-box grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 lg:grid-cols-4 gap-4"
+          >
+            <!-- footer column 01 -->
+            <div class="footer-area-single-items">
+              <article>
+                <h3 class="text-lg md:text-xl py-1 md:py-3">1000+</h3>
+                <p class="text-md md:text-base">Completed Projects</p>
+              </article>
+            </div>
+            <!-- footer column 02 -->
+            <div class="footer-area-single-items">
+              <article>
+                <h3 class="text-lg md:text-xl py-1 md:py-3">Get in Touch</h3>
+                <p class="text-md md:text-base">
+                  Global Travel Reservation System Pte. Ltd. (TA: 03048)
+                </p>
+              </article>
+            </div>
+            <!-- footer column 03 -->
+            <div class="footer-area-single-items">
+              <article>
+                <h3 class="text-lg md:text-xl py-1 md:py-3">Learn More</h3>
+                <ul>
+                  <li class="text-md md:text-base"><a href="#">Products</a></li>
+                  <li class="text-md md:text-base">
+                    <a href="#">Industries</a>
+                  </li>
+                  <li class="text-md md:text-base">
+                    <a href="#">News & Insights</a>
+                  </li>
+                  <li class="text-md md:text-base"><a href="#">About Us</a></li>
+                </ul>
+              </article>
+            </div>
+            <!-- footer column 04 -->
+            <div class="footer-area-single-items">
+              <article>
+                <h3 class="text-lg md:text-xl py-1 md:py-3">Our Newsletter</h3>
+                <p class="text-md md:text-base">
+                  Subscribe to our newsletter to get
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!----------------------END OF FOOTER SECTION AREA-------------------->
+    </div>
+    <!-- script file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- slick end -->
+    <!-- <script src="./js/textAnimation.js"></script> -->
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GTR system</title>
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/178ebc03bb.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- slick slider -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+
+    <!-- Tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- reset css -->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <!-- Navbar -->
+    <link rel="stylesheet" href="../css/nav.css" />
+    <!-- shape -->
+    <link rel="stylesheet" href="../css/shape.css" />
+    <!-- button css -->
+    <link rel="stylesheet" href="../css/button.css" />
+    <!-- social icons -->
+    <link rel="stylesheet" href="../css/social-icons.css" />
+    <!-- main style sheet -->
+    <link rel="stylesheet" href="../style.css" />
+    <!-- responsive css -->
+    <link rel="stylesheet" href="../css/responsive.css" />
+  </head>
+  <body>
+    <div id="gtr-system">
+      <div class="section-header">
+        <div class="menu-overly"></div>
+        <!-- off canvas menu -->
+        <nav
+          class="navbar lg:hidden flex items-start justify-start offcanvas-menu"
+        >
+          <div class="offcanvas-close">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <div class="gtr-box-container p-4">
+            <!-- navbar brand -->
+            <a href="./index.html" class="navbar-brand">
+              <img
+                src="../images/logo/logo.png"
+                class="w-full navbar-brand-logo"
+                alt=""
+              />
+            </a>
+
+            <!-- navbar link -->
+            <div class="navbar-link-and-social mt-7">
+              <ul class="navbar-nav">
+                <li class="nav-items">
+                  <a href="../index.html" class="nav-link"
+                    >Home
+                    <!-- <i class="fa-solid fa-angle-down"></i> -->
+                  </a>
+                  <!-- dropdown -->
+                  <!-- <ul class="dropdown">
+                    <li class="dropdown-items">
+                      <a href="./pages/gtr-news-insights.html" class="dropdown-link"
+                        >Home 2</a
+                      >
+                    </li>
+                  </ul> -->
+                </li>
+                <li class="nav-items">
+                  <a href="#" class="nav-link">Products</a>
+                </li>
+                <li class="nav-items">
+                  <a href="#" class="nav-link">Industries</a>
+                </li>
+                <li class="nav-items">
+                  <a href="../pages/news-insights.html" class="nav-link"
+                    >news & insights</a
+                  >
+                </li>
+                <li class="nav-items">
+                  <a href="#" class="nav-link">about us</a>
+                </li>
+
+                <li class="nav-items">
+                  <a href="../pages/contact-us.html" class="nav-link"
+                    >contact us</a
+                  >
+                </li>
+              </ul>
+
+              <!-- navbar social icons -->
+              <div class="relative">
+                <ul
+                  class="nav-social flex items-center justify-start mt-2 max-w-full"
+                >
+                  <li class="social-items">
+                    <a href="#" class="social-link"
+                      ><i class="fa-brands fa-facebook-f"></i
+                    ></a>
+                  </li>
+                  <li class="social-items">
+                    <a href="#" class="social-link"
+                      ><i class="fa-brands fa-twitter"></i
+                    ></a>
+                  </li>
+                  <li class="social-items">
+                    <a href="#" class="social-link"
+                      ><i class="fa-brands fa-instagram"></i
+                    ></a>
+                  </li>
+                  <li class="social-items">
+                    <a href="#" class="social-link"
+                      ><i class="fa-brands fa-youtube"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Navigation bar -->
+        <nav class="navbar navigation-bar">
+          <div class="gtr-box-container flex items-center justify-between py-3">
+            <!-- navbar brand -->
+            <a href="../index.html" class="navbar-brand">
+              <img
+                src="../images/logo/logo.png"
+                class="w-full navbar-brand-logo"
+                alt=""
+              />
+            </a>
+
+            <!-- navbar link -->
+            <div class="lg:block hidden">
+              <div
+                class="navbar-link-and-social flex items-center justify-between"
+              >
+                <ul class="navbar-nav flex items-center justify-between">
+                  <li class="nav-items flex items-center justify-center">
+                    <a href="../index.html" class="nav-link">Home </a>
+
+                    <!-- dropdown -->
+                    <!-- <ul class="dropdown">
+                      <li class="dropdown-items">
+                        <a href="./pages/gtr-news-insights.html" class="dropdown-link"
+                          >Home 2</a
+                        >
+                      </li>
+                    </ul> -->
+                  </li>
+                  <li class="nav-items">
+                    <a href="#" class="nav-link">Products</a>
+                  </li>
+                  <li class="nav-items">
+                    <a href="#" class="nav-link">Industries</a>
+                  </li>
+                  <li class="nav-items">
+                    <a href="../pages/news-insights.html" class="nav-link"
+                      >news & insights</a
+                    >
+                  </li>
+                  <li class="nav-items">
+                    <a href="#" class="nav-link">about us</a>
+                  </li>
+
+                  <li class="nav-items">
+                    <a href="../pages/contact-us.html" class="nav-link"
+                      >contact us</a
+                    >
+                  </li>
+                </ul>
+
+                <!-- navbar social icons -->
+                <ul class="nav-social flex items-center justify-between ml-12">
+                  <li class="social-items">
+                    <a href="#" class="social-link"
+                      ><i class="fa-brands fa-facebook-f"></i
+                    ></a>
+                  </li>
+                  <li class="social-items">
+                    <a href="#" class="social-link"
+                      ><i class="fa-brands fa-twitter"></i
+                    ></a>
+                  </li>
+                  <li class="social-items">
+                    <a href="#" class="social-link"
+                      ><i class="fa-brands fa-instagram"></i
+                    ></a>
+                  </li>
+                  <li class="social-items">
+                    <a href="#" class="social-link"
+                      ><i class="fa-brands fa-youtube"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- navbar toggler icons -->
+            <div class="navbar-toggler-icons lg:hidden">
+              <div class="hamburger-wrap">
+                <div class="hamburger">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <!-- post author -->
+        <section class="pt-16">
+          <div class="gtr-box-container py-16">
+            <article class="post-author w-full md:w-[60%] mx-auto">
+              <div class="author-details flex items-center jsutify-start">
+                <div class="mr-4">
+                  <img src="../images/user/user-1.png" alt="post-author" />
+                </div>
+
+                <div class="flex flex-col">
+                  <h4 class="text-md md:text-2xl font-bold">Andrew Jonson</h4>
+                  <span class="text-base">Posted on 27th January 2022</span>
+                </div>
+              </div>
+
+              <!-- post title -->
+              <h1 class="text-2xl lg:text-4xl font-bold mt-3">
+                Step-by-step guide to choosing great font pairs
+              </h1>
+
+              <div class="flex items-center justify-start">
+                <div class="mr-2 mt-3">
+                  <svg
+                    width="24"
+                    height="23"
+                    viewBox="0 0 24 23"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_363_887)">
+                      <path
+                        d="M14.9498 8.49712C15.7723 9.26921 17.1105 9.26925 17.933 8.49712C18.3314 8.12307 18.5508 7.62581 18.5508 7.09685C18.5508 6.5679 18.3314 6.07064 17.933 5.69663C17.5218 5.31056 16.9816 5.11755 16.4414 5.11755C15.9013 5.11755 15.3611 5.31056 14.9499 5.69663C14.5515 6.07064 14.332 6.5679 14.332 7.09685C14.332 7.62581 14.5515 8.12312 14.9498 8.49712Z"
+                        fill="#232536"
+                      />
+                      <path
+                        d="M6.10492 6.08435L4.02565 6.23516C3.44708 6.27714 2.93179 6.56181 2.61182 7.01617L0.213854 10.421C-0.0288162 10.7655 -0.067394 11.1967 0.110589 11.5745C0.288619 11.9522 0.654475 12.2155 1.08924 12.2787L2.99305 12.5555C3.43841 10.3367 4.50452 8.12344 6.10492 6.08435Z"
+                        fill="#FFD050"
+                      />
+                      <path
+                        d="M10.625 19.7202L10.9199 21.5075C10.9872 21.9157 11.2677 22.2591 11.67 22.4262C11.8374 22.4958 12.0146 22.5301 12.1908 22.5301C12.4385 22.5301 12.6844 22.4624 12.8987 22.3293L16.5256 20.0781C17.0096 19.7777 17.3128 19.2939 17.3575 18.7508L17.5181 16.7988C15.346 18.3013 12.9885 19.3022 10.625 19.7202Z"
+                        fill="#FFD050"
+                      />
+                      <path
+                        d="M9.90948 18.4819C9.97557 18.4819 10.042 18.4768 10.1084 18.4664C11.0985 18.311 12.0529 18.0492 12.9633 17.7065L5.13853 10.3606C4.77347 11.2152 4.49456 12.1112 4.329 13.0408C4.26375 13.4072 4.39467 13.7805 4.67447 14.0433L9.04056 18.1421C9.27287 18.3602 9.58642 18.4819 9.90948 18.4819Z"
+                        fill="#FFD050"
+                      />
+                      <path
+                        d="M22.0865 9.98941C24.0013 6.51411 24.0722 2.84158 23.9721 1.1192C23.9379 0.529036 23.4367 0.0585275 22.808 0.0263594C22.5093 0.0110454 22.1552 0 21.7562 0C19.7047 0 16.4586 0.291713 13.3595 1.79657C10.8966 2.99252 7.66708 5.62586 5.76172 9.08655C5.78422 9.10305 5.8062 9.12057 5.82692 9.14002L14.2644 17.061C14.2851 17.0805 14.3037 17.1011 14.3213 17.1222C18.0076 15.3334 20.8126 12.3016 22.0865 9.98941ZM13.9547 4.76317C15.3254 3.4764 17.5557 3.47627 18.9265 4.76317C19.5905 5.38651 19.9562 6.21536 19.9562 7.09692C19.9562 7.97849 19.5905 8.80733 18.9265 9.43067C18.2412 10.074 17.3407 10.3957 16.4406 10.3958C15.5402 10.3958 14.6402 10.0742 13.9547 9.43067C13.2907 8.80733 12.925 7.97849 12.925 7.09692C12.925 6.21536 13.2907 5.38651 13.9547 4.76317Z"
+                        fill="#232536"
+                      />
+                      <path
+                        d="M0.716821 18.5675C0.896774 18.5675 1.07673 18.5031 1.21398 18.3741L3.50959 16.219C3.78418 15.9612 3.78418 15.5433 3.50959 15.2855C3.23504 15.0277 2.78982 15.0277 2.51523 15.2855L0.219617 17.4406C-0.0549766 17.6984 -0.0549766 18.1163 0.219617 18.3741C0.356914 18.503 0.536867 18.5675 0.716821 18.5675Z"
+                        fill="#FFD050"
+                      />
+                      <path
+                        d="M5.61382 17.26C5.33927 17.0022 4.89405 17.0022 4.61946 17.26L0.205945 21.4034C-0.0686484 21.6612 -0.0686484 22.0791 0.205945 22.3369C0.343242 22.4658 0.523195 22.5302 0.703148 22.5302C0.883102 22.5302 1.06305 22.4658 1.2003 22.3368L5.61377 18.1935C5.88841 17.9357 5.88841 17.5178 5.61382 17.26Z"
+                        fill="#FFD050"
+                      />
+                      <path
+                        d="M6.72221 19.2364L4.42665 21.3915C4.15205 21.6493 4.15205 22.0672 4.42665 22.325C4.56395 22.4539 4.7439 22.5184 4.9238 22.5184C5.10371 22.5184 5.28371 22.454 5.42096 22.325L7.71657 20.1699C7.99116 19.9121 7.99116 19.4942 7.71657 19.2364C7.44202 18.9786 6.9968 18.9786 6.72221 19.2364Z"
+                        fill="#FFD050"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_363_887">
+                        <rect width="24" height="22.5311" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <span class="font-semibold">Startup</span>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+
+      <!-- Start gtr body area -->
+      <div class="gtr-body">
+        <!----------------------START BLOG POST PAGE & POST DETAILS SECTION AREA-------------------->
+        <section>
+          <div class="post-details-wrapper">
+            <div class="gtr-box-container border-b pb-7">
+              <article>
+                <div class="post-images">
+                  <img
+                    src="../images/post/post-details-1.png"
+                    class="max-w-full w-full"
+                    alt="post-details"
+                  />
+                </div>
+
+                <!-- post content article -->
+                <div class="w-full max-w-full md:w-[60%] mx-auto mt-7">
+                  <!-- article content 01 -->
+                  <div class="">
+                    <h3 class="text-2xl md:text-3xl font-bold">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod.
+                    </h3>
+
+                    <p class="mt-3 text-md md:text-base">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Non blandit massa enim nec. Scelerisque viverra
+                      mauris in aliquam sem. At risus viverra adipiscing at in
+                      tellus. Sociis natoque penatibus et magnis dis parturient
+                      montes. Ridiculus mus mauris vitae ultricies leo. Neque
+                      egestas congue quisque egestas diam. Risus in hendrerit
+                      gravida rutrum quisque non.
+                    </p>
+                  </div>
+
+                  <!-- article content 02 -->
+                  <div class="mt-7">
+                    <h3 class="text-2xl md:text-3xl font-bold">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod.
+                    </h3>
+
+                    <p class="mt-3 text-md md:text-base">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Non blandit massa enim nec. Scelerisque viverra
+                      mauris in aliquam sem. At risus viverra adipiscing at in
+                      tellus. Sociis natoque penatibus et magnis dis parturient
+                      montes. Ridiculus mus mauris vitae ultricies leo. Neque
+                      egestas congue quisque egestas diam. Risus in hendrerit
+                      gravida rutrum quisque non.
+                    </p>
+                    <p class="mt-3 text-md md:text-base">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Non blandit massa enim nec. Scelerisque viverra
+                      mauris in aliquam sem. At risus viverra adipiscing at in
+                      tellus. Sociis natoque penatibus et magnis dis parturient
+                      montes. Ridiculus mus mauris vitae ultricies leo. Neque
+                      egestas congue quisque egestas diam. Risus in hendrerit
+                      gravida rutrum quisque non.
+                    </p>
+                    <!-- list -->
+                    <ul class="mt-3">
+                      <li>Lorem ipsum dolor sit amet</li>
+                      <li>Non blandit massa enim nec scelerisque</li>
+                      <li>Neque egestas congue quisque egestas</li>
+                    </ul>
+
+                    <p class="mt-3 text-md md:text-base">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Non blandit massa enim nec. Scelerisque viverra
+                      mauris in aliquam sem. At risus viverra adipiscing at in
+                      tellus. Sociis natoque penatibus et magnis dis parturient
+                      montes. Ridiculus mus mauris vitae ultricies leo. Neque
+                      egestas congue quisque egestas diam. Risus in hendrerit
+                      gravida rutrum quisque non.
+                    </p>
+                  </div>
+
+                  <!-- article content 03 -->
+                  <div class="mt-7">
+                    <h3 class="text-2xl md:text-3xl font-bold">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod.
+                    </h3>
+
+                    <p class="mt-3 text-md md:text-base">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Non blandit massa enim nec. Scelerisque viverra
+                      mauris in aliquam sem. At risus viverra adipiscing at in
+                      tellus. Sociis natoque penatibus et magnis dis parturient
+                      montes. Ridiculus mus mauris vitae ultricies leo. Neque
+                      egestas congue quisque egestas diam. Risus in hendrerit
+                      gravida rutrum quisque non.
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <!-- semiller blog -->
+              <div class="semiller-blog-post">
+                <div
+                  class="mt-7 grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-7"
+                >
+                  <!-- post content 01 -->
+                  <div class="gtr-post-content-box">
+                    <div class="gtr-post-single-content-items">
+                      <div class="">
+                        <article>
+                          <div class="gtr-post-hover-left-bottom-right-top">
+                            <div class="gtr-post-hover-left-top-right-bottom">
+                              <a href="../pages/blog-post.html">
+                                <img
+                                  src="../images/post/post-feature-1.png"
+                                  alt="feature-post"
+                                  class="max-w-full"
+                                />
+                              </a>
+                            </div>
+                          </div>
+
+                          <!-- content article 01 -->
+                          <div class="">
+                            <div class="py-4">
+                              <small class="inline-block"
+                                >By
+                                <span
+                                  class="gtr-news-insights-post-author cursor-pointer"
+                                  >John Doe</span
+                                >
+                                l May 23, 2022</small
+                              >
+                              <a href="#" class="visited:text-[#7C00F5]">
+                                <h3
+                                  class="text-2xl font-semibold mt-2 hover:underline hover:text-[#AA00F0]"
+                                >
+                                  A UX Case Study Creating a Studious
+                                  Environment for Students:
+                                </h3>
+                              </a>
+                              <p class="mt-2.5">
+                                Duis aute irure dolor in reprehenderit in
+                                voluptate velit esse cillum dolore eu fugiat
+                                nulla pariatur. Excepteur sint occaecat
+                                cupidatat non proident.
+                              </p>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- post content 02 -->
+                  <div class="gtr-post-content-box">
+                    <div class="gtr-post-single-content-items">
+                      <div class="">
+                        <article>
+                          <div class="gtr-post-hover-left-bottom-right-top">
+                            <div class="gtr-post-hover-left-top-right-bottom">
+                              <a href="../pages/blog-post.html">
+                                <img
+                                  src="../images/post/post-feature-1.png"
+                                  alt="feature-post"
+                                  class="max-w-full"
+                                />
+                              </a>
+                            </div>
+                          </div>
+
+                          <!-- content article 02 -->
+
+                          <div class="">
+                            <div class="py-4">
+                              <small class="inline-block"
+                                >By
+                                <span
+                                  class="gtr-news-insights-post-author cursor-pointer"
+                                  >John Doe</span
+                                >
+                                l May 23, 2022</small
+                              >
+                              <a href="#" class="visited:text-[#7C00F5]">
+                                <h3
+                                  class="text-2xl font-semibold mt-2 hover:underline hover:text-[#AA00F0]"
+                                >
+                                  A UX Case Study Creating a Studious
+                                  Environment for Students:
+                                </h3>
+                              </a>
+                              <p class="mt-2.5">
+                                Duis aute irure dolor in reprehenderit in
+                                voluptate velit esse cillum dolore eu fugiat
+                                nulla pariatur. Excepteur sint occaecat
+                                cupidatat non proident.
+                              </p>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- post content 03 -->
+                  <div class="gtr-post-content-box">
+                    <div class="gtr-post-single-content-items">
+                      <div class="">
+                        <article>
+                          <div class="gtr-post-hover-left-bottom-right-top">
+                            <div class="gtr-post-hover-left-top-right-bottom">
+                              <a href="../pages/blog-post.html">
+                                <img
+                                  src="../images/post/post-feature-1.png"
+                                  alt="feature-post"
+                                  class="max-w-full"
+                                />
+                              </a>
+                            </div>
+                          </div>
+
+                          <!-- content article 01 -->
+
+                          <div class="">
+                            <div class="py-4">
+                              <small class="inline-block"
+                                >By
+                                <span
+                                  class="gtr-news-insights-post-author cursor-pointer"
+                                  >John Doe</span
+                                >
+                                l May 23, 2022</small
+                              >
+                              <a href="#" class="visited:text-[#7C00F5]">
+                                <h3
+                                  class="text-2xl font-semibold mt-2 hover:underline hover:text-[#AA00F0]"
+                                >
+                                  A UX Case Study Creating a Studious
+                                  Environment for Students:
+                                </h3>
+                              </a>
+                              <p class="mt-2.5">
+                                Duis aute irure dolor in reprehenderit in
+                                voluptate velit esse cillum dolore eu fugiat
+                                nulla pariatur. Excepteur sint occaecat
+                                cupidatat non proident.
+                              </p>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- JOIN OUR COMMUNITY -->
+          <div class="JOIN-OUR-COMMUNITY text-center pt-16">
+            <h4 class="text-xl uppercase">JOIN OUR COMMUNITY</h4>
+            <div class="w-full md:w-[50%] mx-auto">
+              <h1 class="text-2xl md:text-3xl font-bold py-3">
+                We are trusted by over 5000+ clients. Join us now and grow your
+                business.
+              </h1>
+
+              <!-- btn -->
+              <a href="#" type="button" class="gtr-btn global-btn mt-7"
+                ><span>
+                  know more <i class="fa-solid fa-arrow-trend-up"></i></span
+              ></a>
+            </div>
+          </div>
+        </section>
+        <!----------------------END OF BLOG POST PAGE & POST DETAILS SECTION AREA-------------------->
+      </div>
+      <!-- end gtr body -->
+
+      <!----------------------START ALL POST PAGE & ALL POST SECTION AREA-------------------->
+      <footer class="footer-area p-4 pb-7 mt-7 md:mt-16">
+        <div class="gtr-box-container">
+          <div
+            class="footer-area-box grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 lg:grid-cols-4 gap-4"
+          >
+            <!-- footer column 01 -->
+            <div class="footer-area-single-items">
+              <article>
+                <h3 class="text-lg md:text-xl py-1 md:py-3">1000+</h3>
+                <p class="text-md md:text-base">Completed Projects</p>
+              </article>
+            </div>
+            <!-- footer column 02 -->
+            <div class="footer-area-single-items">
+              <article>
+                <h3 class="text-lg md:text-xl py-1 md:py-3">Get in Touch</h3>
+                <p class="text-md md:text-base">
+                  Global Travel Reservation System Pte. Ltd. (TA: 03048)
+                </p>
+              </article>
+            </div>
+            <!-- footer column 03 -->
+            <div class="footer-area-single-items">
+              <article>
+                <h3 class="text-lg md:text-xl py-1 md:py-3">Learn More</h3>
+                <ul>
+                  <li class="text-md md:text-base"><a href="#">Products</a></li>
+                  <li class="text-md md:text-base">
+                    <a href="#">Industries</a>
+                  </li>
+                  <li class="text-md md:text-base">
+                    <a href="#">News & Insights</a>
+                  </li>
+                  <li class="text-md md:text-base"><a href="#">About Us</a></li>
+                </ul>
+              </article>
+            </div>
+            <!-- footer column 04 -->
+            <div class="footer-area-single-items">
+              <article>
+                <h3 class="text-lg md:text-xl py-1 md:py-3">Our Newsletter</h3>
+                <p class="text-md md:text-base">
+                  Subscribe to our newsletter to get
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!----------------------END OF FOOTER SECTION AREA-------------------->
+    </div>
+    <!-- script file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- slick end -->
+    <!-- <script src="./js/textAnimation.js"></script> -->
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>

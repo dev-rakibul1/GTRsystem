@@ -1,0 +1,425 @@
+/* shape animate */
+
+/* shape 01 */
+
+.shape-1 {
+  top: 15%;
+  display: block;
+  position: absolute;
+  animation: linear infinite alternate;
+  animation-name: run;
+  animation-duration: 50000ms;
+  opacity: 40%;
+  left: -20%;
+}
+
+@-webkit-keyframes run {
+  0% {
+    left: -10%;
+    transform: translateX(0);
+  }
+  100% {
+    left: 70%;
+    transform: translateX(-10%);
+    opacity: 0;
+  }
+}
+
+/* shape 02 */
+.shape {
+  z-index: -1;
+}
+
+.shape-2 {
+  position: absolute;
+  left: 0%;
+  display: block;
+  width: 150px;
+  height: 150px; /* Adjust height to match your shape */
+  transition: top 4s ease, left 4s ease, opacity 4s ease;
+
+  top: 45%;
+  display: block;
+  position: absolute;
+  animation: linear infinite alternate;
+  animation-name: run2;
+  animation-duration: 35000ms;
+  opacity: 60%;
+}
+
+@keyframes run2 {
+  0% {
+    transform: translateY(0px) translateX(0);
+    left: 0;
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(-40px) translateX(0);
+    opacity: 40%;
+  }
+  100% {
+    transform: translateY(0px) translateX(-10%);
+    left: 50%;
+    opacity: 0;
+  }
+}
+/* shape 03 */
+.shape-3 {
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  display: block;
+  width: 100px;
+  opacity: 0.2;
+  transform: translateY(0px);
+  animation: float 20s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* shape 04 */
+.shape-4 {
+  position: absolute;
+  bottom: 4%;
+  left: 0%;
+  display: block;
+  width: 250px;
+  transform: translateY(0px);
+  animation: float 25s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* shape 05 */
+.shape-5 {
+  position: absolute;
+  top: 20%;
+  left: -3%;
+  display: block;
+  width: 250px;
+  transform: translateY(0px);
+  animation: float3 25s ease-in-out infinite;
+}
+@keyframes float3 {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.images-shape-move-2 {
+  display: block;
+  opacity: 1;
+  animation: imageShapeMoveAnimation2 17s ease-in-out infinite;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+}
+
+@keyframes imageShapeMoveAnimation2 {
+  0% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(5deg);
+  }
+}
+
+/* image shape 05 */
+
+.images-shape-move {
+  /* position: absolute; */
+  display: block;
+  opacity: 1;
+  animation: float 17s ease-in-out infinite;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-60px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.images-shape-move-2 img,
+.images-shape-move img {
+  width: 350px;
+  max-width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+.images-extra-size img {
+  width: 400px !important;
+  max-width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+/* animation moving */
+.hero-section-2::before {
+  position: absolute;
+  content: "";
+  background: url("../images/shape/Vector.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-attachment: scroll;
+  background-size: contain;
+  right: 11%;
+  top: 0;
+  z-index: -1;
+  transform: translateY(-50%);
+  width: 550px;
+  height: 550px;
+  background: linear-gradient(24deg, #4502fa, #ea01ec);
+  border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+  /* will-change: border-radius, transform, opacity; */
+  animation: sliderShape 20s linear infinite;
+  display: block;
+  z-index: -1;
+  -webkit-animation: sliderShape 20s linear infinite;
+}
+@keyframes sliderShape {
+  0%,
+  100% {
+    border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+    transform: translate3d(1000px, 2000px, 1500px) rotate(0.01deg);
+  }
+  34% {
+    border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+    transform: translate3d(0, 500px, 0) rotate(50deg);
+  }
+  50% {
+    transform: translate3d(0, 0, 0) rotate(700deg);
+  }
+  67% {
+    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+    transform: translate3d(0, 300px, 0) rotate(360deg);
+  }
+}
+
+/* -------------------------------- */
+
+.blob {
+  max-height: 100%;
+  height: 100%;
+  width: 62vw;
+  max-width: 100%;
+}
+.blob path {
+  animation: blob 50000ms linear infinite, rot 53s linear infinite;
+}
+
+@keyframes blob {
+  0% {
+    d: path(
+      "M36.6,-68.7C46.3,-57.8,52.2,-45.7,58.9,-34C65.5,-22.4,72.8,-11.2,73.5,0.4C74.1,11.9,68,23.8,61.7,36.1C55.5,48.5,49.1,61.2,38.8,71C28.5,80.8,14.2,87.6,0.3,87.1C-13.7,86.6,-27.3,78.8,-39,69.8C-50.7,60.8,-60.4,50.7,-69.8,38.8C-79.2,27,-88.3,13.5,-89.7,-0.8C-91.2,-15.2,-85,-30.4,-76.6,-43.8C-68.1,-57.2,-57.3,-68.9,-44.1,-77.8C-31,-86.8,-15.5,-93,-1,-91.3C13.4,-89.5,26.9,-79.7,36.6,-68.7Z"
+    );
+  }
+  25% {
+    d: path(
+      "M36.6,-68.7C46.3,-57.8,52.2,-45.7,58.9,-34C65.5,-22.4,72.8,-11.2,73.5,0.4C74.1,11.9,68,23.8,61.7,36.1C55.5,48.5,49.1,61.2,38.8,71C28.5,80.8,14.2,87.6,0.3,87.1C-13.7,86.6,-27.3,78.8,-39,69.8C-50.7,60.8,-60.4,50.7,-69.8,38.8C-79.2,27,-88.3,13.5,-89.7,-0.8C-91.2,-15.2,-85,-30.4,-76.6,-43.8C-68.1,-57.2,-57.3,-68.9,-44.1,-77.8C-31,-86.8,-15.5,-93,-1,-91.3C13.4,-89.5,26.9,-79.7,36.6,-68.7Z"
+    );
+  }
+  50% {
+    d: path(
+      "M36.6,-68.7C46.3,-57.8,52.2,-45.7,58.9,-34C65.5,-22.4,72.8,-11.2,73.5,0.4C74.1,11.9,68,23.8,61.7,36.1C55.5,48.5,49.1,61.2,38.8,71C28.5,80.8,14.2,87.6,0.3,87.1C-13.7,86.6,-27.3,78.8,-39,69.8C-50.7,60.8,-60.4,50.7,-69.8,38.8C-79.2,27,-88.3,13.5,-89.7,-0.8C-91.2,-15.2,-85,-30.4,-76.6,-43.8C-68.1,-57.2,-57.3,-68.9,-44.1,-77.8C-31,-86.8,-15.5,-93,-1,-91.3C13.4,-89.5,26.9,-79.7,36.6,-68.7Z"
+    );
+  }
+  75% {
+    d: path(
+      "M36.6,-68.7C46.3,-57.8,52.2,-45.7,58.9,-34C65.5,-22.4,72.8,-11.2,73.5,0.4C74.1,11.9,68,23.8,61.7,36.1C55.5,48.5,49.1,61.2,38.8,71C28.5,80.8,14.2,87.6,0.3,87.1C-13.7,86.6,-27.3,78.8,-39,69.8C-50.7,60.8,-60.4,50.7,-69.8,38.8C-79.2,27,-88.3,13.5,-89.7,-0.8C-91.2,-15.2,-85,-30.4,-76.6,-43.8C-68.1,-57.2,-57.3,-68.9,-44.1,-77.8C-31,-86.8,-15.5,-93,-1,-91.3C13.4,-89.5,26.9,-79.7,36.6,-68.7Z"
+    );
+  }
+  100% {
+    d: path(
+      "M36.6,-68.7C46.3,-57.8,52.2,-45.7,58.9,-34C65.5,-22.4,72.8,-11.2,73.5,0.4C74.1,11.9,68,23.8,61.7,36.1C55.5,48.5,49.1,61.2,38.8,71C28.5,80.8,14.2,87.6,0.3,87.1C-13.7,86.6,-27.3,78.8,-39,69.8C-50.7,60.8,-60.4,50.7,-69.8,38.8C-79.2,27,-88.3,13.5,-89.7,-0.8C-91.2,-15.2,-85,-30.4,-76.6,-43.8C-68.1,-57.2,-57.3,-68.9,-44.1,-77.8C-31,-86.8,-15.5,-93,-1,-91.3C13.4,-89.5,26.9,-79.7,36.6,-68.7Z"
+    );
+  }
+}
+
+@keyframes rot {
+  fom {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* starts */
+/* ============================================================================================== 
+SED Innovations
+https://sed.am
+https://mkrtchyan.ga
+================================================================================================= */
+
+header a,
+a:visited {
+  text-decoration: none;
+}
+
+@keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+@-webkit-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+@-moz-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+@-ms-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+@keyframes move-clouds-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
+}
+@-webkit-keyframes move-clouds-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
+}
+@-moz-keyframes move-clouds-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
+}
+@-ms-keyframes move-clouds-back {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
+}
+
+.stars,
+.twinkling,
+.clouds {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.stars {
+  background: url(http://www.script-tutorials.com/demos/360/images/stars.png)
+    repeat top center;
+  z-index: 0;
+}
+
+/* cloud shape */
+
+.cloud {
+  width: 200px;
+  height: 100px;
+  background: rgb(196, 196, 196);
+  border-radius: 150px;
+  position: relative;
+  position: absolute;
+  top: 10%;
+  left: 0;
+  display: block;
+  width: 150px;
+  height: 150px; /* Adjust height to match your shape */
+  opacity: 0.5;
+  transition: top 0.5s ease, left 0.5s ease, opacity 0.5s ease;
+}
+
+.cloud::before,
+.cloud::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: rgb(196, 196, 196);
+  border-radius: 100px;
+  transform: translateX(-50%);
+}
+
+.cloud::before {
+  top: -50px;
+  left: 50%;
+}
+
+.cloud::after {
+  top: -25px;
+  left: 30%;
+}

@@ -1,0 +1,240 @@
+/*! HTML5 Boilerplate version 1.0.0 | MIT License | It's free and comfort usable */
+
+/* reset.css 1.0.0 | RAKIBUL ISLAM
+/*
+ *It's default CSS use in website and cross-browser styling. This code collects in
+  HTML5 and CSS3 this class flowing and create a website in a simple time!
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+/**
+CALLING GOOGLE FONTS
+font-family: 'Lexend', sans-serif;
+*/
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/*
+  * Remove the margin and padding in all browsers.
+  */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* color */
+:root {
+  --primary-color: linear-gradient(24deg, #4502fa, #ea01ec);
+  --para-color: #7b7583;
+  --application-bg: linear-gradient(
+    45deg,
+    rgba(48, 255, 0, 0.1741071428571429) 8%,
+    rgba(234, 1, 236, 0.0760679271708683) 100%
+  );
+}
+
+/*
+ * div default margin and padding none 
+ */
+
+html,
+body {
+  box-sizing: border-box;
+  font-smooth: inherit;
+  scroll-behavior: smooth;
+  transition: all 0.5s;
+  width: 100%;
+  height: auto;
+  scroll-margin-top: 0;
+  font-family: "Lexend", sans-serif;
+  background: rgb(231, 249, 255);
+  background: -moz-linear-gradient(
+    80deg,
+    rgba(231, 249, 255, 1) 8%,
+    rgba(255, 248, 243, 1) 55%
+  );
+  background: -webkit-linear-gradient(
+    80deg,
+    rgba(231, 249, 255, 1) 8%,
+    rgba(255, 248, 243, 1) 55%
+  );
+  background: linear-gradient(
+    80deg,
+    rgba(231, 249, 255, 1) 8%,
+    rgba(255, 248, 243, 1) 55%
+  );
+}
+/* -------------------------------------------------------------------------- */
+/* Container */
+/* -------------------------------------------------------------------------- */
+.gtr-box-container {
+  width: 95%;
+  height: auto;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.gtr-box-container {
+  width: 1170px;
+  height: auto;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+input[type="search"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="number"]:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  outline: none;
+}
+
+input::placeholder {
+  color: #a1a1a1; /* Desired placeholder color */
+}
+textarea:focus {
+  outline: none; /* Optional: Remove the outline when the textarea is focused */
+}
+textarea {
+  border: 1px solid #ddd;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style-type: none;
+  list-style: none;
+}
+
+p {
+  color: var(--para-color);
+  font-family: "Lexend", sans-serif;
+  font-weight: 300;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Remove the default number input arrows */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+/* Example styling */
+.slider {
+  width: 80%; /* Adjust the width as needed */
+  margin: 0 auto;
+}
+
+.slide img {
+  max-width: 100%;
+  height: auto;
+}
+
+.common-btn {
+  border: none;
+  width: 100%;
+  border-radius: 5px;
+  background: #ddd;
+  cursor: pointer !important;
+  padding: 11px;
+  font-weight: 600;
+  font-size: 11px;
+  color: #000;
+  font-size: 15px;
+}
+
+.common-btn:hover {
+  background-color: #cfcfcf;
+  cursor: pointer;
+  color: #000;
+}
+
+/* menu overly */
+.menu-overly {
+  opacity: 0;
+  transition: 0.5s;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+}
+.menu-overly-add {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: 5;
+  position: absolute;
+  opacity: 0.5;
+  visibility: visible;
+}
+
+/* button */
+.landing-btn {
+  padding: 13px 39px;
+  background: linear-gradient(24deg, #4502fa, #ea01ec);
+  border-radius: 50px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+/* .landing-btn:hover {
+  background: blue;
+  border-radius: 0px;
+} */
+/* section title color */
+
+.text-gradient,
+.flight-airlines-title-color-part,
+.fight-product-feature-items h3,
+.flight-product-feature-title-color-part,
+.flight-top-article-title .flight-title-color-part,
+.author-details h4,
+.gtr-post-article-text-color small,
+.post-search-box-modal-header h4,
+.gtr-news-insights-post-author,
+.gtr-news-insights-feature-post-view-all,
+.gtr-news-insights .gtr-news-insights-hero-text,
+.footer-area-single-items h3,
+.JOIN-OUR-COMMUNITY h4,
+.power-images-content p,
+.power-images-content span,
+.gtr-proud-counter-single-items h2,
+.CASE-STUDIES h5,
+.feature-single-items h4,
+.out-features-area h4,
+.c-gtr-system-content h4,
+.enhance-body-single-items h4,
+.enhance-content-title-part-1,
+.enhance-content-title-part-2 {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(24deg, #4502fa, #ea01ec);
+  display: inline-block;
+  font-weight: 600;
+}
+/* ===================================0END0==================================== */
