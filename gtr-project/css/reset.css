@@ -89,6 +89,10 @@ body {
   padding-right: 15px;
 }
 
+.bg-gradient {
+  background: linear-gradient(68deg, #4502fa, #ea01ec);
+}
+
 input[type="search"]:focus,
 input[type="datetime-local"]:focus,
 input[type="date"]:focus,
@@ -199,6 +203,37 @@ input[type="number"] {
   font-size: 14px;
   text-transform: uppercase;
   transition: 0.5s;
+}
+
+/* message */
+.error-message {
+  color: red;
+}
+.success-message {
+  color: #9bff9b;
+}
+input.warning-border {
+  border: 1px solid rgb(194, 0, 0);
+}
+input.success-border {
+  border: 1px solid #9bff9b;
+}
+
+.input-control.success input {
+  border-color: #9bff9b;
+}
+.input-control.error input {
+  border-color: rgb(194, 0, 0);
+}
+.input-control.success textarea {
+  border-color: #9bff9b;
+}
+.input-control.error textarea {
+  border-color: rgb(194, 0, 0);
+}
+
+.input-control .error {
+  color: #950000;
 }
 
 /* .landing-btn:hover {

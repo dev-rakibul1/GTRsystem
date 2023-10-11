@@ -1002,31 +1002,127 @@
 
 /* ----------------------------------------------------- */
 /*                   CONTACT US PAGE
-/*      START CONTACT US  GET IN TOUCH SECTION STYLE
+/*      START CONTACT US  CONTACT SECTION STYLE
 /* ----------------------------------------------------- */
-.contact-us-hero-area {
-  background: url("https://ichef.bbci.co.uk/news/976/cpsprodpb/0A7D/production/_114558620_1.jpg.webp");
-  width: 100%;
-  height: 100%;
-  background-position: bottom;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+.contact-page-shape-1 {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
   z-index: 1;
 }
-.contact-us-hero-area::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+
+.contact-us-sailor-shape {
+  top: -25%;
+  right: -25%;
   height: 100%;
-  z-index: -1;
-  background: rgb(0, 0, 0);
-  background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 0.8155637254901961) 0%,
-    rgba(255, 255, 255, 0.7567401960784313) 100%
-  );
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  transform: translate(-50%);
+  max-width: 180px;
+}
+.contact-page-shape-2 {
+  width: 250px;
+  height: 250px;
+  display: inline-block;
+  border-radius: 100%;
+  position: absolute;
+  bottom: -15%;
+  right: -15%;
+  z-index: 0;
+}
+
+/* input */
+.input-control {
+  position: relative;
+}
+.input-control input {
+  border: none;
+  border-bottom: 1px solid #333;
+  height: 45px;
+  width: 100%;
+  padding: 2px 7px;
+}
+
+.custom-field {
+  /* position: relative; */
+  font-size: 14px;
+  /* border-top: 20px solid transparent; */
+  /* margin-bottom: 5px; */
+  /* display: inline-block; */
+  --field-padding: 12px;
+}
+
+.custom-field input {
+  border: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #f2f2f2;
+  padding: var(--field-padding);
+  border-radius: 3px;
+  width: 100%;
+  max-width: 100%;
+  outline: none;
+  font-size: 14px;
+}
+
+.custom-field .placeholder {
+  position: absolute;
+  left: var(--field-padding);
+  width: calc(100% - (var(--field-padding) * 2));
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  top: 22px;
+  line-height: 100%;
+  transform: translateY(-50%);
+  color: #aaa;
+  transition: top 0.3s ease, color 0.3s ease, font-size 0.3s ease;
+}
+
+.custom-field input.dirty + .placeholder,
+.custom-field input:focus + .placeholder,
+.custom-field input:not(:placeholder-shown) + .placeholder {
+  top: -10px;
+  font-size: 14px;
+  color: #222;
+}
+
+.custom-field .error-message {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+  font-size: 12px;
+  background: #d30909;
+  color: #fff;
+  height: 24px;
+}
+
+.custom-field .error-message:empty {
+  opacity: 0;
+}
+
+/* TWO */
+.custom-field.two input {
+  border-radius: 0;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background: linear-gradient(90deg, #222, #222) center bottom/0 0.15em
+      no-repeat,
+    linear-gradient(90deg, #ccc, #ccc) left bottom/100% 0.15em no-repeat,
+    linear-gradient(90deg, #fafafa, #fafafa) left bottom/100% no-repeat;
+  transition: background-size 0.3s ease;
+}
+
+.custom-field.two input.dirty,
+.custom-field.two input:not(:placeholder-shown),
+.custom-field.two input:focus {
+  background-size: 100% 0.15em, 100% 0.1em, 100%;
 }

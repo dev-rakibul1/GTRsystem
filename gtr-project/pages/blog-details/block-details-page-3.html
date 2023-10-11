@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GTR system</title>
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/178ebc03bb.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- slick slider -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+
+    <!-- Tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- reset css -->
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <!-- Navbar -->
+    <link rel="stylesheet" href="../../css/nav.css" />
+    <!-- shape -->
+    <link rel="stylesheet" href="../../css/shape.css" />
+    <!-- button css -->
+    <link rel="stylesheet" href="../../css/button.css" />
+    <!-- social icons -->
+    <link rel="stylesheet" href="../../css/social-icons.css" />
+    <!-- main style sheet -->
+    <link rel="stylesheet" href="../../style.css" />
+    <!-- responsive css -->
+    <link rel="stylesheet" href="../../css/responsive.css" />
+  </head>
+  <body>
+    <div id="gtr-system">
+      <div class="section-header">
+        <div class="menu-overly"></div>
+        <!-- off canvas menu -->
+        <nav
+          class="navbar lg:hidden flex items-start justify-start offcanvas-menu"
+        >
+          <div class="offcanvas-close">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <div class="gtr-box-container p-4">
+            <!-- navbar brand -->
+            <a href="../../index.html" class="navbar-brand">
+              <img
+                src="../../images/logo/logo.png"
+                class="w-full navbar-brand-logo"
+                alt=""
+              />
+            </a>
+
+            <!-- navbar link -->
+            <div class="navbar-link-and-social mt-7">
+              <ul class="navbar-nav">
+                <li class="nav-items">
+                  <a href="../index.html" class="nav-link"
+                    >Home
+                    <!-- <i class="fa-solid fa-angle-down"></i> -->
+                  </a>
+                  <!-- dropdown -->
+                  <!-- <ul class="dropdown">
+                    <li class="dropdown-items">
+                      <a href="./pages/gtr-news-insights.html" class="dropdown-link"
+                        >Home 2</a
+                      >
+                    </li>
+                  </ul> -->
+                </li>
+                <li class="nav-items">
+                  <a href="#" class="nav-link">Products</a>
+                </li>
+                <li class="nav-items">
+                  <a href="#" class="nav-link">Industries</a>
+                </li>
+                <li class="nav-items">
+                  <a href="../pages/news-insights.html" class="nav-link"
+                    >news & insights</a
+                  >
+                </li>
+                <li class="nav-items">
+                  <a href="#" class="nav-link">about us</a>
+                </li>
+
+                <li class="nav-items">
+                  <a href="../pages/contact-us.html" class="nav-link"
+                    >contact us</a
+                  >
+                </li>
+              </ul>
+
+              <!-- navbar social icons -->
+              <div class="relative">
+                <ul
+                  class="nav-social flex items-center justify-start mt-2 max-w-full"
+                >
+                  <li class="social-items">
+                    <a href="#" class="social-link"
+                      ><i class="fa-brands fa-facebook-f"></i
+                    ></a>
+                  </li>
+                  <li class="social-items">
+                    <a href="#" class="social-link"
+                      ><i class="fa-brands fa-twitter"></i
+                    ></a>
+                  </li>
+                  <li class="social-items">
+                    <a href="#" class="social-link"
+                      ><i class="fa-brands fa-instagram"></i
+                    ></a>
+                  </li>
+                  <li class="social-items">
+                    <a href="#" class="social-link"
+                      ><i class="fa-brands fa-youtube"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Navigation bar -->
+        <nav class="navbar navigation-bar">
+          <div class="gtr-box-container flex items-center justify-between py-3">
+            <!-- navbar brand -->
+            <a href="../../index.html" class="navbar-brand">
+              <img
+                src="../../images/logo/logo.png"
+                class="w-full navbar-brand-logo"
+                alt=""
+              />
+            </a>
+
+            <!-- navbar link -->
+            <div class="lg:block hidden">
+              <div
+                class="navbar-link-and-social flex items-center justify-between"
+              >
+                <ul class="navbar-nav flex items-center justify-between">
+                  <li class="nav-items flex items-center justify-center">
+                    <a href="../../index.html" class="nav-link">Home </a>
+
+                    <!-- dropdown -->
+                    <!-- <ul class="dropdown">
+                      <li class="dropdown-items">
+                        <a href="./pages/gtr-news-insights.html" class="dropdown-link"
+                          >Home 2</a
+                        >
+                      </li>
+                    </ul> -->
+                  </li>
+                  <li class="nav-items">
+                    <a href="#" class="nav-link">Products</a>
+                  </li>
+                  <li class="nav-items">
+                    <a href="#" class="nav-link">Industries</a>
+                  </li>
+                  <li class="nav-items">
+                    <a href=".././news-insights.html" class="nav-link"
+                      >news & insights</a
+                    >
+                  </li>
+                  <li class="nav-items">
+                    <a href="#" class="nav-link">about us</a>
+                  </li>
+
+                  <li class="nav-items">
+                    <a href=".././contact-us.html" class="nav-link"
+                      >contact us</a
+                    >
+                  </li>
+                </ul>
+
+                <!-- navbar social icons -->
+                <ul class="nav-social flex items-center justify-between ml-12">
+                  <li class="social-items">
+                    <a href="#" class="social-link"
+                      ><i class="fa-brands fa-facebook-f"></i
+                    ></a>
+                  </li>
+                  <li class="social-items">
+                    <a href="#" class="social-link"
+                      ><i class="fa-brands fa-twitter"></i
+                    ></a>
+                  </li>
+                  <li class="social-items">
+                    <a href="#" class="social-link"
+                      ><i class="fa-brands fa-instagram"></i
+                    ></a>
+                  </li>
+                  <li class="social-items">
+                    <a href="#" class="social-link"
+                      ><i class="fa-brands fa-youtube"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- navbar toggler icons -->
+            <div class="navbar-toggler-icons lg:hidden">
+              <div class="hamburger-wrap">
+                <div class="hamburger">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <!-- post author -->
+        <section class="pt-16">
+          <div class="gtr-box-container py-16"></div>
+        </section>
+      </div>
+
+      <!-- Start gtr body area -->
+      <div class="gtr-body">
+        <!----------------------START BLOG POST PAGE & POST DETAILS SECTION AREA-------------------->
+        <section>
+          <div class="post-details-wrapper">
+            <div class="gtr-box-container border-b pb-7">
+              <article>
+                <div class="post-images">
+                  <img
+                    src="../../images/post/post-feature-6.jpg"
+                    class="max-w-full w-full"
+                    alt="post-details"
+                  />
+                </div>
+
+                <!-- post content article -->
+                <div class="w-full max-w-full md:w-[60%] mx-auto mt-7">
+                  <!-- article content 01 -->
+                  <!-- post title -->
+                  <h1 class="text-2xl lg:text-4xl font-bold mt-3">
+                    Click to Pay, Experience the Difference!
+                  </h1>
+                  <div class="mt-3">
+                    <p class="text-md md:text-base text-justify">
+                      The travel industry has undergone a remarkable
+                      transformation in recent years, driven by technological
+                      advancements and changing consumer expectations. In this
+                      new era of travel, GTRSystem emerges as a trailblazer,
+                      offering a seamless and innovative experience that
+                      revolutionizes the way you plan and pay for your journeys.
+                      Welcome to the new era of GTRSystem - a world where a
+                      simple click can make all the difference.
+                    </p>
+                  </div>
+
+                  <div class="mt-3">
+                    <div class="">
+                      <p class="text-md md:text-base text-justify">
+                        GTRSystem has redefined the way you search, book, and
+                        pay for your travel arrangements. With its user-friendly
+                        platform and cutting-edge technology, GTRSystem has made
+                        the process of planning a trip effortless and efficient.
+                        No longer do you need to spend hours browsing through
+                        countless websites or contacting various agencies or
+                        companies to find the best deals. GTRSystem brings
+                        together all the necessary resources in one place,
+                        allowing you to compare prices, check availability,
+                        baggage search features and view route maps with just a
+                        few clicks.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- block -->
+                  <div class="">
+                    <!-- block 01 -->
+                    <div class="mt-3">
+                      <p class="text-md md:text-base text-justify">
+                        But what truly sets GTRSystem apart is its seamless
+                        payment system. In the past, paying for travel
+                        arrangements often involved complicated processes and
+                        numerous intermediaries. GTRSystem has eliminated these
+                        barriers, making the payment experience as simple as a
+                        click. With a secure and integrated payment gateway, you
+                        can now complete your transactions quickly and
+                        effortlessly. Whether it's booking a flight, reserving a
+                        hotel room, or securing a rental car, the entire payment
+                        process is streamlined, allowing you to focus on your
+                        business and the success of your upcoming ventures.
+                      </p>
+                    </div>
+
+                    <!-- block 02 -->
+                    <div class="mt-3">
+                      <p class="text-md md:text-base text-justify">
+                        The convenience of click-to-pay goes beyond just speed
+                        and simplicity. GTRSystem understands the importance of
+                        security when it comes to financial transactions. By
+                        partnering with trusted payment gateways and
+                        implementing robust security measures, GTRSystem ensures
+                        that your payment information is protected at all times.
+                        This commitment to safety and data privacy gives you
+                        peace of mind, ensuring a smooth process that allows you
+                        to embark on your booking experience with confidence and
+                        ease.
+                      </p>
+                    </div>
+
+                    <!-- block 03 -->
+                    <div class="mt-3">
+                      <p class="text-md md:text-base text-justify">
+                        Welcome to the new era of GTRSystem - where a simple
+                        click can unlock extraordinary travel experiences.
+                        Embrace the convenience, security, and personalized
+                        service that GTRSystem offers. Experience the difference
+                        of click-to-pay, and embark on your next journey with
+                        confidence, knowing that GTRSystem is your trusted
+                        companion every step of the way. Experience the
+                        difference of click-to-pay and let GTRSystem redefine
+                        your hassle-free experience.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- semiller blog -->
+              <div class="semiller-blog-post">
+                <div
+                  class="mt-7 grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-7"
+                >
+                  <!-- post content 01 -->
+                  <div class="gtr-post-content-box">
+                    <div class="gtr-post-single-content-items">
+                      <div class="">
+                        <article>
+                          <div class="gtr-post-hover-left-bottom-right-top">
+                            <div class="gtr-post-hover-left-top-right-bottom">
+                              <a href="../../pages/blog-post.html">
+                                <img
+                                  src="../../images/post/post-feature-1.png"
+                                  alt="feature-post"
+                                  class="max-w-full"
+                                />
+                              </a>
+                            </div>
+                          </div>
+
+                          <!-- content article 01 -->
+                          <div class="">
+                            <div class="py-4">
+                              <small class="inline-block"
+                                >By
+                                <span
+                                  class="gtr-news-insights-post-author cursor-pointer"
+                                  >John Doe</span
+                                >
+                                l May 23, 2022</small
+                              >
+                              <a href="#" class="visited:text-[#7C00F5]">
+                                <h3
+                                  class="text-2xl font-semibold mt-2 hover:underline hover:text-[#AA00F0]"
+                                >
+                                  A UX Case Study Creating a Studious
+                                  Environment for Students:
+                                </h3>
+                              </a>
+                              <p class="mt-2.5">
+                                Duis aute irure dolor in reprehenderit in
+                                voluptate velit esse cillum dolore eu fugiat
+                                nulla pariatur. Excepteur sint occaecat
+                                cupidatat non proident.
+                              </p>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- post content 02 -->
+                  <div class="gtr-post-content-box">
+                    <div class="gtr-post-single-content-items">
+                      <div class="">
+                        <article>
+                          <div class="gtr-post-hover-left-bottom-right-top">
+                            <div class="gtr-post-hover-left-top-right-bottom">
+                              <a href="../../pages/blog-post.html">
+                                <img
+                                  src="../../images/post/post-feature-1.png"
+                                  alt="feature-post"
+                                  class="max-w-full"
+                                />
+                              </a>
+                            </div>
+                          </div>
+
+                          <!-- content article 02 -->
+
+                          <div class="">
+                            <div class="py-4">
+                              <small class="inline-block"
+                                >By
+                                <span
+                                  class="gtr-news-insights-post-author cursor-pointer"
+                                  >John Doe</span
+                                >
+                                l May 23, 2022</small
+                              >
+                              <a href="#" class="visited:text-[#7C00F5]">
+                                <h3
+                                  class="text-2xl font-semibold mt-2 hover:underline hover:text-[#AA00F0]"
+                                >
+                                  A UX Case Study Creating a Studious
+                                  Environment for Students:
+                                </h3>
+                              </a>
+                              <p class="mt-2.5">
+                                Duis aute irure dolor in reprehenderit in
+                                voluptate velit esse cillum dolore eu fugiat
+                                nulla pariatur. Excepteur sint occaecat
+                                cupidatat non proident.
+                              </p>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- post content 03 -->
+                  <div class="gtr-post-content-box">
+                    <div class="gtr-post-single-content-items">
+                      <div class="">
+                        <article>
+                          <div class="gtr-post-hover-left-bottom-right-top">
+                            <div class="gtr-post-hover-left-top-right-bottom">
+                              <a href="../../pages/blog-post.html">
+                                <img
+                                  src="../../images/post/post-feature-1.png"
+                                  alt="feature-post"
+                                  class="max-w-full"
+                                />
+                              </a>
+                            </div>
+                          </div>
+
+                          <!-- content article 01 -->
+
+                          <div class="">
+                            <div class="py-4">
+                              <small class="inline-block"
+                                >By
+                                <span
+                                  class="gtr-news-insights-post-author cursor-pointer"
+                                  >John Doe</span
+                                >
+                                l May 23, 2022</small
+                              >
+                              <a href="#" class="visited:text-[#7C00F5]">
+                                <h3
+                                  class="text-2xl font-semibold mt-2 hover:underline hover:text-[#AA00F0]"
+                                >
+                                  A UX Case Study Creating a Studious
+                                  Environment for Students:
+                                </h3>
+                              </a>
+                              <p class="mt-2.5">
+                                Duis aute irure dolor in reprehenderit in
+                                voluptate velit esse cillum dolore eu fugiat
+                                nulla pariatur. Excepteur sint occaecat
+                                cupidatat non proident.
+                              </p>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- JOIN OUR COMMUNITY -->
+          <div class="JOIN-OUR-COMMUNITY text-center pt-16">
+            <h4 class="text-xl uppercase">JOIN OUR COMMUNITY</h4>
+            <div class="w-full md:w-[50%] mx-auto">
+              <h1 class="text-2xl md:text-3xl font-bold py-3">
+                We are trusted by over 5000+ clients. Join us now and grow your
+                business.
+              </h1>
+
+              <!-- btn -->
+              <a href="#" type="button" class="gtr-btn global-btn mt-7"
+                ><span>
+                  know more <i class="fa-solid fa-arrow-trend-up"></i></span
+              ></a>
+            </div>
+          </div>
+        </section>
+        <!----------------------END OF BLOG POST PAGE & POST DETAILS SECTION AREA-------------------->
+      </div>
+      <!-- end gtr body -->
+
+      <!----------------------START ALL POST PAGE & ALL POST SECTION AREA-------------------->
+      <footer class="footer-area p-4 pb-7 mt-7 md:mt-16">
+        <div class="gtr-box-container">
+          <div
+            class="footer-area-box grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 lg:grid-cols-4 gap-4"
+          >
+            <!-- footer column 01 -->
+            <div class="footer-area-single-items">
+              <article>
+                <h3 class="text-lg md:text-xl py-1 md:py-3">1000+</h3>
+                <p class="text-md md:text-base">Completed Projects</p>
+              </article>
+            </div>
+            <!-- footer column 02 -->
+            <div class="footer-area-single-items">
+              <article>
+                <h3 class="text-lg md:text-xl py-1 md:py-3">Get in Touch</h3>
+                <p class="text-md md:text-base">
+                  Global Travel Reservation System Pte. Ltd. (TA: 03048)
+                </p>
+              </article>
+            </div>
+            <!-- footer column 03 -->
+            <div class="footer-area-single-items">
+              <article>
+                <h3 class="text-lg md:text-xl py-1 md:py-3">Learn More</h3>
+                <ul>
+                  <li class="text-md md:text-base"><a href="#">Products</a></li>
+                  <li class="text-md md:text-base">
+                    <a href="#">Industries</a>
+                  </li>
+                  <li class="text-md md:text-base">
+                    <a href="#">News & Insights</a>
+                  </li>
+                  <li class="text-md md:text-base"><a href="#">About Us</a></li>
+                </ul>
+              </article>
+            </div>
+            <!-- footer column 04 -->
+            <div class="footer-area-single-items">
+              <article>
+                <h3 class="text-lg md:text-xl py-1 md:py-3">Our Newsletter</h3>
+                <p class="text-md md:text-base">
+                  Subscribe to our newsletter to get
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!----------------------END OF FOOTER SECTION AREA-------------------->
+    </div>
+    <!-- script file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- slick end -->
+    <!-- <script src="./js/textAnimation.js"></script> -->
+
+    <script src="../../js/script.js"></script>
+  </body>
+</html>
