@@ -80,7 +80,7 @@ body {
 }
 
 .gtr-box-container {
-  width: 1170px;
+  width: 1270px;
   height: auto;
   max-width: 100%;
   margin-left: auto;
@@ -206,34 +206,9 @@ input[type="number"] {
 }
 
 /* message */
-.error-message {
+
+.input-control small {
   color: red;
-}
-.success-message {
-  color: #9bff9b;
-}
-input.warning-border {
-  border: 1px solid rgb(194, 0, 0);
-}
-input.success-border {
-  border: 1px solid #9bff9b;
-}
-
-.input-control.success input {
-  border-color: #9bff9b;
-}
-.input-control.error input {
-  border-color: rgb(194, 0, 0);
-}
-.input-control.success textarea {
-  border-color: #9bff9b;
-}
-.input-control.error textarea {
-  border-color: rgb(194, 0, 0);
-}
-
-.input-control .error {
-  color: #950000;
 }
 
 /* .landing-btn:hover {

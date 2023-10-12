@@ -12,6 +12,7 @@
   outline-offset: -2px;
   transition: all 0.5s;
   display: inline-block;
+  transition: 0.5s;
 }
 
 .gtr-btn:hover {
@@ -47,4 +48,28 @@
   font-weight: 500;
   overflow: hidden;
   z-index: 20;
+  transition: 0.5s;
+}
+
+.kfy-arrow-2 {
+  opacity: 0;
+  transition: 0.5s;
+  font-size: 12px;
+}
+.kfy-arrow {
+  transition: 0.5s;
+  opacity: 1;
+  font-size: 12px;
+}
+
+.kfy-btn:hover .kfy-arrow {
+  padding-left: 50px;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.kfy-btn:hover .kfy-arrow-2 {
+  right: 0px;
+  transition: 0.5s;
+  opacity: 1;
 }

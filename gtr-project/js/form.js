@@ -1,183 +1,94 @@
 // Form validation
 const form = document.getElementById("contact-form");
 const submitButton = document.getElementById("submit-button");
-const usernamePattern = /^[a-zA-Z]+[a-zA-Z0-9_ ]*$/;
+const usernamePattern = /^[A-Za-z\s]+$/;
+
+const firstNameError = document.querySelector(".firstName")
+const lastNameError = document.querySelector(".lastName")
+const emailError = document.querySelector(".email")
+const phoneError = document.querySelector(".phone")
+const errorMessage = document.querySelector(".errorMessage")
 
 
-// const userFName = document.getElementById("firstName")
-// const userLName = document.getElementById("lastName")
-// const userEmail = document.getElementById("email")
-// const userPhone = document.getElementById("phone")
-// // const userCompany = document.getElementById("company-name")
-// // const userCountry = document.getElementById("country")
-// const userMessage = document.getElementById("message")
-// const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+const userFName = document.getElementById("firstName")
+const userLName = document.getElementById("lastName")
+const userEmail = document.getElementById("email")
+const userPhone = document.getElementById("phone")
+const userMessage = document.getElementById("message")
+const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
+const checkBox1 = document.getElementById("contact-checkbox-1");
+const checkBox2 = document.getElementById("contact-checkbox-2");
+const checkBox3 = document.getElementById("contact-checkbox-3");
+const checkBox4 = document.getElementById("contact-checkbox-4");
 
 
+let collectedValues = [];
 
+function collectCheckboxValues() {
+    collectedValues = [];
+    const checkboxes = document.querySelectorAll('.checkbox');
 
-
-// form.addEventListener("submit", (event) => {
-//     event.preventDefault()
-//     // validateInput()
-
-
-
-
-
-
-//     // form.reset()
-
-// })
-
-
-// // set error message
-// const setErrorMeg = (element, message) => {
-//     const inputControl = element.parentElement;
-//     const errorDisplay = inputControl.querySelector(".error-message")
-
-//     errorDisplay.innerText = message
-//     inputControl.classList.add("error")
-//     inputControl.classList.remove("success")
-// }
-
-// // set success message
-// const setSuccessMeg = (element) => {
-//     const inputControl = element.parentElement
-//     const errorDisplay = inputControl.querySelector(".error-message");
-
-//     errorDisplay.innerText = ""
-//     inputControl.classList.add("success")
-//     inputControl.classList.remove("error")
-// }
-
-// const validateInput = () => {
-//     const userFNameValue = userFName.value.trim();
-//     const userLNameValue = userLName.value.trim();
-//     const userEmailValue = userEmail.value.trim();
-//     const userPhoneValue = userPhone.value.trim();
-//     // const userCompanyValue = userCompany.value.trim();
-//     // const userCountryValue = userCountry.value.trim();
-//     const userMessageValue = userMessage.value.trim();
-
-//     // name
-//     if (userFNameValue === "") {
-//         setErrorMeg(userFName, "Name is required!")
-
-//     } else if (!usernamePattern.test(userFNameValue)) {
-//         setErrorMeg(userFName, "Name is not valid!")
-
-//     } else {
-//         setSuccessMeg(userFName)
-//     }
-
-//     // email
-//     if (userEmailValue === "") {
-//         setErrorMeg(userEmail, "Email is required!")
-
-//     } else if (!emailRegex.test(userEmailValue)) {
-//         setErrorMeg(userEmail, "Email is not valid!")
-
-//     } else {
-//         setSuccessMeg(userEmail)
-//     }
-
-//     // phone
-//     if (userPhoneValue === "") {
-//         setErrorMeg(userPhone, "Phone number is required!")
-
-//     } else {
-//         setSuccessMeg(userPhone)
-
-//     }
-
-//     // company Name
-//     // if (userCompanyValue === "") {
-//     //     setErrorMeg(userCompany, "Company name is required!")
-
-//     // } else {
-//     //     setSuccessMeg(userCompany)
-//     // }
-
-//     // // company Name
-//     // if (userCountryValue === "") {
-//     //     setErrorMeg(userCountry, "Company name is required!")
-
-//     // } else {
-//     //     setSuccessMeg(userCountry)
-//     // }
-
-//     // // country Name
-//     // if (userCountryValue === "") {
-//     //     setErrorMeg(userCountry, "Country name is required!")
-
-//     // } else {
-//     //     setSuccessMeg(userCountry)
-//     // }
-
-//     // Message
-//     if (userMessageValue === "") {
-//         setErrorMeg(userMessage, "Message is required!")
-
-//     } else {
-//         setSuccessMeg(userMessage)
-//     }
-
-//     console.log(userNameValue);
-
-//     if (
-//         !userFNameValue === false ||
-//         !userEmailValue === false ||
-//         !userPhoneValue === false ||
-//         // !userCompanyValue === false ||
-//         // !userCountryValue === false ||
-//         // !userCountryValue === false ||
-//         !userMessageValue === false
-
-//     ) {
+    checkboxes.forEach((checkbox) => {
+        if (checkbox.checked) {
+            collectedValues.push(checkbox.value);
+        }
+    });
+    console.log(collectedValues);
+}
 
 
 
-//     }
+form.addEventListener(("submit"), (event) => {
+    event.preventDefault()
 
-
-
-
-
-
-
-// When the document is ready
-$(document).ready(function () {
-    console.log("Welcome");
-    // Function to show the success modal and overlay
-    function showSuccessModal() {
-        const successModalOverlay = document.getElementById("success-modal-overlay");
-        const successModal = document.getElementById("success-modal");
-        successModalOverlay.classList.remove("hidden");
-        successModal.classList.remove("hidden");
+    // First name
+    if (userFName.value === "") {
+        firstNameError.innerText = "First name is required!"
+        return
+    } else {
+        firstNameError.innerText = ""
+    }
+    // Last name
+    if (userLName.value === "") {
+        lastNameError.innerText = "Last name is required!"
+        return
+    } else {
+        lastNameError.innerText = ""
     }
 
-    // Function to show the error modal and overlay
-    function showErrorModal() {
-        const errorModalOverlay = document.getElementById("error-modal-overlay");
-        const errorModal = document.getElementById("error-modal");
-        errorModalOverlay.classList.remove("hidden");
-        errorModal.classList.remove("hidden");
+    // Email
+    if (userEmail.value === "") {
+
+        emailError.innerText = "Email is required!"
+        return
+    } else if (!emailRegex.test(userEmail.value)) {
+        emailError.innerText = "Email is not valid!"
+        return
+    } else {
+        emailError.innerText = ""
     }
 
-    // Function to hide modals and overlays
-    function hideModals() {
-        const successModalOverlay = document.getElementById("success-modal-overlay");
-        const errorModalOverlay = document.getElementById("error-modal-overlay");
-        const successModal = document.getElementById("success-modal");
-        const errorModal = document.getElementById("error-modal");
-        successModalOverlay.classList.add("hidden");
-        errorModalOverlay.classList.add("hidden");
-        successModal.classList.add("hidden");
-        errorModal.classList.add("hidden");
+    // Phone
+    if (userPhone.value === "") {
+        phoneError.innerText = "Phone is required!"
+        return
+    } else {
+        phoneError.innerText = ""
     }
-    submitButton.addEventListener("click", function (e) {
-        e.preventDefault()
+
+    // Message
+
+    if (userMessage.value === "") {
+        errorMessage.innerText = "Message is required!"
+        return
+    } else {
+        errorMessage.innerText = ""
+    }
+
+
+    // When the document is ready
+    $(document).ready(function () {
         const formData = {
 
             firstName: $("#firstName").val(),
@@ -187,6 +98,7 @@ $(document).ready(function () {
             company: $("#company-name").val(),
             country: $("#country").val(),
             message: $("#message").val(),
+            value: collectedValues.map((data) => data)
 
             // firstName: userNameValue,
             // lastName: userNameValue,
@@ -244,10 +156,11 @@ $(document).ready(function () {
      <body>
          <div class="container">
              <h1>Contact Information</h1>
-             <p><strong>Name:</strong> ${formData.firstName ? formData.firstName : "Empty"}</p>
-             <p><strong>Name:</strong> ${formData.lastName ? formData.lastName : "Empty"}</p>
+             <p><strong>First name:</strong> ${formData.firstName ? formData.firstName : "Empty"}</p>
+             <p><strong>Last name:</strong> ${formData.lastName ? formData.lastName : "Empty"}</p>
              <p><strong>Email:</strong> <a href="mailto:${formData.email ? formData.email : "xyz@gmail.com"}">${formData.email ? formData.email : "Empty"}</a></p>
              <p><strong>Phone:</strong> ${formData.phone ? formData.phone : "Empty"}</p>
+             <p><strong>Business policy:</strong> ${formData.value ? formData.value : "Empty"}</p>
              <div class="contact-info">
                  <p><strong>Message:</strong> ${formData.message ? formData.message : "Empty"}</p>
              </div>
@@ -281,7 +194,7 @@ $(document).ready(function () {
                 email_cc: [
                     {
                         full_name: "Tanveer Kazi",
-                        email_addresss: "tanveer11245@innovatesolution.com",
+                        email_addresss: "tanveer@innovatesolution.com",
                     },
                     {
                         full_name: "Rakibul Islam",
@@ -291,7 +204,7 @@ $(document).ready(function () {
                 email_bcc: [
                     {
                         full_name: "Abdus Samad",
-                        email_addresss: "samad145781@innovatesolution.com",
+                        email_addresss: "samad@innovatesolution.com",
                     },
                 ],
             }),
@@ -299,10 +212,9 @@ $(document).ready(function () {
                 console.log(response);
                 if (response.status === "failed") {
 
-                    return showErrorModal()
+                    return window.location.href = "../pages/message/fail.html";
                 } else {
-
-                    showSuccessModal();
+                    return window.location.href = "../pages/message/success.html";
                 }
 
 
@@ -310,17 +222,24 @@ $(document).ready(function () {
             error: function (error) {
                 console.error(error);
                 if (error.status === "failed") {
-
-                    return showErrorModal()
+                    return window.location.href = "../pages/message/fail.html";
                 }
-                alert("Fail")
+                return window.location.href = "../pages/message/fail.html";
             },
         });
+
+
+
+
     });
 
 
-    $(".modal-close").on("click", function () {
-        hideModals();
-    });
-});
+    form.reset()
+
+})
+
+
+
+
+
 

@@ -261,16 +261,6 @@
                       <!-- social or basic into -->
                       <div class="mt-16 z-10 relative">
                         <ul>
-                          <li class="flex items-center justify-start">
-                            <i class="fa-solid fa-phone-volume"></i>
-                            <div class="flex items-center justify-start ml-5">
-                              <a href="tel:+65787541145">+65787541145</a>
-                              <span class="inline-block ml-3">|</span>
-                              <a href="tel:+65787541145" class="ml-3"
-                                >+65787541145</a
-                              >
-                            </div>
-                          </li>
                           <li class="flex items-center justify-start mt-7">
                             <i class="fa-regular fa-envelope"></i>
 
@@ -282,8 +272,19 @@
                             <i class="fa-solid fa-location-dot mt-2"></i>
                             <div class="ml-5">
                               <p class="text-md md:text-base py-1 text-white">
+                                Global Travel Reservation System Pte Ltd
+                              </p>
+                              <p class="text-md md:text-base py-1 text-white">
                                 30 Cecil Street # 19-08 Prudential Tower
                                 Singapore 049712
+                              </p>
+                            </div>
+                          </li>
+                          <li class="flex items-start justify-start mt-7">
+                            <i class="fa-solid fa-location-dot mt-2"></i>
+                            <div class="ml-5">
+                              <p class="text-md md:text-base py-1 text-white">
+                                GTRS Tourism LLC
                               </p>
                               <p class="text-md md:text-base py-1 text-white">
                                 Office No. 201-48 - Amna Nasser Mohammed bin
@@ -294,7 +295,7 @@
                         </ul>
 
                         <!-- social link -->
-                        <div class="contact-us-social-link my-12 z-10">
+                        <div class="contact-us-social-link mt-12 z-10">
                           <ul class="flex items-center justify-start">
                             <li
                               class="ml-7 h-9 w-9 border rounded-full flex items-center justify-center bg-white"
@@ -328,6 +329,7 @@
                       <img
                         src="../images/contact/astronaut-flies-earth-space_1.png"
                         alt=""
+                        class="images-shape-move-2"
                       />
                     </div>
                   </div>
@@ -343,12 +345,11 @@
                               <input
                                 type="text"
                                 placeholder="&nbsp;"
-                                required
                                 id="firstName"
                               />
                               <span class="placeholder">First Name</span>
                             </label>
-                            <small class="error-message"></small>
+                            <small class="firstName"></small>
                           </div>
 
                           <!-- last name -->
@@ -357,12 +358,11 @@
                               <input
                                 type="text"
                                 placeholder="&nbsp;"
-                                required
                                 id="lastName"
                               />
                               <span class="placeholder">Last Name</span>
                             </label>
-                            <small class="error-message"></small>
+                            <small class="lastName"></small>
                           </div>
 
                           <!-- email -->
@@ -371,12 +371,11 @@
                               <input
                                 type="email"
                                 placeholder="&nbsp;"
-                                required
                                 id="email"
                               />
                               <span class="placeholder">Email</span>
                             </label>
-                            <small class="error-message"></small>
+                            <small class="email"></small>
                           </div>
 
                           <!-- phone -->
@@ -385,12 +384,11 @@
                               <input
                                 type="number"
                                 placeholder="&nbsp;"
-                                required
                                 id="phone"
                               />
                               <span class="placeholder">Phone Number</span>
                             </label>
-                            <small class="error-message"></small>
+                            <small class="phone"></small>
                           </div>
                         </div>
 
@@ -399,15 +397,63 @@
                           <h4 class="font-bold py-4 text-lg">
                             Select your subject?
                           </h4>
+
+                          <!-- <form id="checkboxForm">
+                            <label for="checkbox1"
+                              ><input
+                                type="checkbox"
+                                id="checkbox1"
+                                name="group1"
+                                value="Option 1"
+                                onclick="collectCheckboxValues()"
+                              />
+                              Option 1</label
+                            ><br />
+                            <label for="checkbox2"
+                              ><input
+                                type="checkbox"
+                                id="checkbox2"
+                                name="group1"
+                                value="Option 2"
+                                onclick="collectCheckboxValues()"
+                              />
+                              Option 2</label
+                            ><br />
+                            <label for="checkbox3"
+                              ><input
+                                type="checkbox"
+                                id="checkbox3"
+                                name="group2"
+                                value="Option 3"
+                                onclick="collectCheckboxValues()"
+                              />
+                              Option 3</label
+                            ><br />
+                            <label for="checkbox4"
+                              ><input
+                                type="checkbox"
+                                id="checkbox4"
+                                name="group2"
+                                value="Option 4"
+                                onclick="collectCheckboxValues()"
+                              />
+                              Option 4</label
+                            ><br />
+                          </form> -->
+
                           <div
-                            class="contact-us-checkbox grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-2"
+                            class="contact-us-checkbox grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-2 gap-2"
                           >
                             <!-- checkbox 01 -->
                             <div class="">
                               <input
                                 type="checkbox"
-                                name=""
+                                class="checkbox"
                                 id="contact-checkbox-1"
+                                value="Interested in Doing Business with
+                                GTRSystem"
+                                name="group1"
+                                onclick="collectCheckboxValues()"
                               />
                               <label for="contact-checkbox-1" class="text-sm"
                                 >Interested in Doing Business with
@@ -418,8 +464,11 @@
                             <div class="">
                               <input
                                 type="checkbox"
-                                name=""
+                                class="checkbox"
                                 id="contact-checkbox-2"
+                                value="Want to know GTRSystem Business"
+                                name="group2"
+                                onclick="collectCheckboxValues()"
                               />
                               <label for="contact-checkbox-2" class="text-sm"
                                 >Want to know GTRSystem Business
@@ -430,8 +479,11 @@
                             <div class="">
                               <input
                                 type="checkbox"
-                                name=""
+                                class="checkbox"
                                 id="contact-checkbox-3"
+                                value="Want to know GTRSystem Products"
+                                name="group3"
+                                onclick="collectCheckboxValues()"
                               />
                               <label for="contact-checkbox-3" class="text-sm"
                                 >Want to know GTRSystem Products
@@ -442,8 +494,11 @@
                             <div class="">
                               <input
                                 type="checkbox"
-                                name=""
+                                class="checkbox"
                                 id="contact-checkbox-4"
+                                name="group4"
+                                value="General Inquiry"
+                                onclick="collectCheckboxValues()"
                               />
                               <label for="contact-checkbox-4" class="text-sm"
                                 >General Inquiry</label
@@ -460,12 +515,11 @@
                                 type="text"
                                 placeholder="&nbsp;"
                                 class="w-full"
-                                required
                                 id="message"
                               />
                               <span class="placeholder">Message</span>
                             </label>
-                            <small class="error-message"></small>
+                            <small class="errorMessage"></small>
                           </div>
                         </div>
 
