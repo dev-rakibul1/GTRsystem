@@ -1016,9 +1016,8 @@
 }
 
 .contact-us-sailor-shape {
-  top: -12%;
+  top: 3%;
   right: -35%;
-  height: 100%;
   display: flex;
   justify-content: end;
   align-items: center;
