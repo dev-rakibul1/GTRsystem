@@ -8,6 +8,8 @@ const lastNameError = document.querySelector(".lastName")
 const emailError = document.querySelector(".email")
 const phoneError = document.querySelector(".phone")
 const errorMessage = document.querySelector(".errorMessage")
+const companyError = document.querySelector(".company-name")
+const countryError = document.querySelector(".country-name")
 
 
 const userFName = document.getElementById("firstName")
@@ -15,6 +17,12 @@ const userLName = document.getElementById("lastName")
 const userEmail = document.getElementById("email")
 const userPhone = document.getElementById("phone")
 const userMessage = document.getElementById("message")
+const companyName = document.getElementById("company-name")
+const countryName = document.getElementById("country-name")
+
+console.log(countryError);
+console.log(countryName);
+
 const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
 
 const checkBox1 = document.getElementById("contact-checkbox-1");
@@ -77,14 +85,30 @@ form.addEventListener(("submit"), (event) => {
         phoneError.innerText = ""
     }
 
-    // Message
-
-    if (userMessage.value === "") {
-        errorMessage.innerText = "Message is required!"
+    // company name
+    if (companyName.value === "") {
+        companyError.innerText = "Company name is required!"
         return
     } else {
-        errorMessage.innerText = ""
+        companyError.innerText = ""
     }
+
+    // country name
+    if (countryName.value === "") {
+        console.log("Not fond");
+        countryError.innerText = "Country name is required!"
+        return
+    } else {
+        countryError.innerText = ""
+    }
+
+    // Message
+    // if (userMessage.value === "") {
+    //     errorMessage.innerText = "Message is required!"
+    //     return
+    // } else {
+    //     errorMessage.innerText = ""
+    // }
 
 
     // When the document is ready
@@ -98,6 +122,8 @@ form.addEventListener(("submit"), (event) => {
             company: $("#company-name").val(),
             country: $("#country").val(),
             message: $("#message").val(),
+            company: $("#company-name").val(),
+            country: $("#country-name").val(),
             value: collectedValues.map((data) => data)
 
             // firstName: userNameValue,
@@ -160,6 +186,8 @@ form.addEventListener(("submit"), (event) => {
              <p><strong>Last name:</strong> ${formData.lastName ? formData.lastName : "Empty"}</p>
              <p><strong>Email:</strong> <a href="mailto:${formData.email ? formData.email : "xyz@gmail.com"}">${formData.email ? formData.email : "Empty"}</a></p>
              <p><strong>Phone:</strong> ${formData.phone ? formData.phone : "Empty"}</p>
+             <p><strong>Company Name:</strong> ${formData.company ? formData.company : "Empty"}</p>
+             <p><strong>Country Name:</strong> ${formData.country ? formData.country : "Empty"}</p>
              <p><strong>Business policy:</strong> ${formData.value ? formData.value : "Empty"}</p>
              <div class="contact-info">
                  <p><strong>Message:</strong> ${formData.message ? formData.message : "Empty"}</p>
