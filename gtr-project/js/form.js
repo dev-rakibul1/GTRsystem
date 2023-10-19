@@ -10,6 +10,10 @@ const phoneError = document.querySelector(".phone")
 const errorMessage = document.querySelector(".errorMessage")
 const companyError = document.querySelector(".company-name")
 const countryError = document.querySelector(".country-name")
+const businessError = document.querySelector(".checkbox-error-meg")
+
+const generalQuery = document.getElementById("contact-checkbox-4")
+console.log(generalQuery);
 
 
 const userFName = document.getElementById("firstName")
@@ -33,9 +37,9 @@ const checkBox4 = document.getElementById("contact-checkbox-4");
 
 let collectedValues = [];
 
+const checkboxes = document.querySelectorAll('.checkbox');
 function collectCheckboxValues() {
     collectedValues = [];
-    const checkboxes = document.querySelectorAll('.checkbox');
 
     checkboxes.forEach((checkbox) => {
         if (checkbox.checked) {
@@ -102,13 +106,21 @@ form.addEventListener(("submit"), (event) => {
         countryError.innerText = ""
     }
 
+    if (collectedValues.length === 0) {
+        businessError.innerText = "Business policy is required!"
+        return
+    } else {
+        businessError.innerText = ""
+    }
+
     // Message
-    // if (userMessage.value === "") {
-    //     errorMessage.innerText = "Message is required!"
-    //     return
-    // } else {
-    //     errorMessage.innerText = ""
-    // }
+    const searchTerm = "General Inquiry";
+    if (collectedValues.includes(searchTerm)) {
+        errorMessage.innerText = "Message is required!"
+        return
+    } else {
+        errorMessage.innerText = ""
+    }
 
 
     // When the document is ready
@@ -134,7 +146,6 @@ form.addEventListener(("submit"), (event) => {
             // // country: userCountryValue,
             // message: userMessageValue,
         };
-        console.log("object", formData);
 
         const emailBodyHtml = `
      <!DOCTYPE html>
@@ -188,7 +199,7 @@ form.addEventListener(("submit"), (event) => {
              <p><strong>Phone:</strong> ${formData.phone ? formData.phone : "Empty"}</p>
              <p><strong>Company Name:</strong> ${formData.company ? formData.company : "Empty"}</p>
              <p><strong>Country Name:</strong> ${formData.country ? formData.country : "Empty"}</p>
-             <p><strong>Business policy:</strong> ${formData.value ? formData.value : "Empty"}</p>
+             <p><strong>Inquiry For:</strong> ${formData.value ? formData.value : "Empty"}</p>
              <div class="contact-info">
                  <p><strong>Message:</strong> ${formData.message ? formData.message : "Empty"}</p>
              </div>
@@ -197,7 +208,7 @@ form.addEventListener(("submit"), (event) => {
      </html>
  `;
 
-        console.log("Formatted Data:", emailBodyHtml);
+
 
         $.ajax({
             type: "POST",
@@ -209,7 +220,7 @@ form.addEventListener(("submit"), (event) => {
                 secretecode: "4e7m4sf3ylynmxriijxygidvtyd7qzag3ylvty74x",
             },
             data: JSON.stringify({
-                email_subject: "Sample Subject",
+                email_subject: `${formData?.firstName + formData?.lastName}`,
                 email_body: emailBodyHtml,
                 email_to: {
                     full_name: formData.name,
@@ -237,7 +248,7 @@ form.addEventListener(("submit"), (event) => {
                 ],
             }),
             success: function (response) {
-                console.log(response);
+
                 if (response.status === "failed") {
 
                     return window.location.href = "../pages/message/fail.html";
@@ -248,7 +259,7 @@ form.addEventListener(("submit"), (event) => {
 
             },
             error: function (error) {
-                console.error(error);
+
                 if (error.status === "failed") {
                     return window.location.href = "../pages/message/fail.html";
                 }

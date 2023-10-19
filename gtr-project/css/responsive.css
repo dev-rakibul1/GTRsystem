@@ -9,12 +9,13 @@
 .hero-blobs {
   position: absolute;
   top: 50%;
-  right: -10%;
+  right: -12%;
   z-index: -1;
   transform: translate(0, -50%);
   max-width: 100%;
   height: auto;
-  width: 45vw;
+  width: 60%;
+  transition: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
