@@ -99,7 +99,6 @@ form.addEventListener(("submit"), (event) => {
 
     // country name
     if (countryName.value === "") {
-        console.log("Not fond");
         countryError.innerText = "Country name is required!"
         return
     } else {
@@ -114,13 +113,16 @@ form.addEventListener(("submit"), (event) => {
     }
 
     // Message
-    const searchTerm = "General Inquiry";
-    if (collectedValues.includes(searchTerm)) {
-        errorMessage.innerText = "Message is required!"
-        return
-    } else {
-        errorMessage.innerText = ""
+    // Check if "General Inquiry" checkbox is selected
+    if (collectedValues.includes("General Inquiry")) {
+        if (userMessage.value.trim() === "") {
+            errorMessage.innerText = "Message is required!";
+            return;
+        } else {
+            errorMessage.innerText = "";
+        }
     }
+    console.log("data___", userMessage.value);
 
 
     // When the document is ready
@@ -192,7 +194,7 @@ form.addEventListener(("submit"), (event) => {
      </head>
      <body>
          <div class="container">
-             <h1>Contact Information</h1>
+             <h1>Contact Information about ${formData?.firstName + formData?.lastName} </h1>
              <p><strong>First name:</strong> ${formData.firstName ? formData.firstName : "Empty"}</p>
              <p><strong>Last name:</strong> ${formData.lastName ? formData.lastName : "Empty"}</p>
              <p><strong>Email:</strong> <a href="mailto:${formData.email ? formData.email : "xyz@gmail.com"}">${formData.email ? formData.email : "Empty"}</a></p>
