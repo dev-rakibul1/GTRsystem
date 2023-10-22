@@ -49,21 +49,12 @@ body {
   height: auto;
   scroll-margin-top: 0;
   font-family: "Lexend", sans-serif;
-  background: rgb(231, 249, 255);
-  background: -moz-linear-gradient(
-    80deg,
-    rgba(231, 249, 255, 1) 8%,
-    rgba(255, 248, 243, 1) 55%
-  );
-  background: -webkit-linear-gradient(
-    80deg,
-    rgba(231, 249, 255, 1) 8%,
-    rgba(255, 248, 243, 1) 55%
-  );
+
+  background: rgb(223, 244, 255);
   background: linear-gradient(
-    80deg,
-    rgba(231, 249, 255, 1) 8%,
-    rgba(255, 248, 243, 1) 55%
+    90deg,
+    rgba(223, 244, 255, 1) 0%,
+    rgba(252, 240, 228, 1) 100%
   );
 }
 /* -------------------------------------------------------------------------- */
@@ -209,6 +200,52 @@ input[type="number"] {
 
 .input-control small {
   color: red;
+}
+
+/* Style the custom-checkbox container */
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Style the Font Awesome check icon */
+.custom-checkbox .fas.fa-check {
+  font-size: 18px; /* Adjust the icon size as needed */
+  color: #2196f3; /* Icon color */
+  margin-right: 6px; /* Adjust the spacing between the icon and label */
+}
+
+/* Style the custom checkbox label */
+.custom-checkbox label {
+  font-size: 14px;
+  color: #333; /* Label color */
+}
+
+/* Style the custom checkbox when checked */
+.custom-checkbox input:checked + label .fas.fa-check {
+  color: #00a859; /* Icon color when checked */
+}
+
+/* Style for the custom select box */
+.custom-select {
+  position: relative;
+}
+
+/* .custom-select select:focus {
+  border-color: hsl(211, 100%, 50%);
+} */
+
+/* Style for the "Choose Products" option */
+.custom-select option[value=""] {
+  display: none;
+  position: absolute;
+  transform: translateY(-40px); /* Adjust the value to your preference */
+}
+
+.custom-select select option:hover {
+  background-color: #4e02f9;
+  color: #fff; /* Text color on hover */
 }
 
 /* .landing-btn:hover {

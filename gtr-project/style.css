@@ -1202,28 +1202,3 @@
 }
 
 /* --------------------------------- */
-
-/* Style the custom-checkbox container */
-.custom-checkbox {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
-
-/* Style the Font Awesome check icon */
-.custom-checkbox .fas.fa-check {
-  font-size: 18px; /* Adjust the icon size as needed */
-  color: #2196f3; /* Icon color */
-  margin-right: 6px; /* Adjust the spacing between the icon and label */
-}
-
-/* Style the custom checkbox label */
-.custom-checkbox label {
-  font-size: 14px;
-  color: #333; /* Label color */
-}
-
-/* Style the custom checkbox when checked */
-.custom-checkbox input:checked + label .fas.fa-check {
-  color: #00a859; /* Icon color when checked */
-}

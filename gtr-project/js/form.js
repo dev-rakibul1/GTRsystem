@@ -53,10 +53,9 @@ function collectCheckboxValues() {
 
 
 
+
 form.addEventListener(("submit"), (event) => {
     event.preventDefault()
-
-
 
     // First name
     if (userFName.value === "") {
@@ -139,6 +138,8 @@ form.addEventListener(("submit"), (event) => {
             errorQuarryMeg.innerText = "";
         }
     }
+
+
 
 
     // When the document is ready
