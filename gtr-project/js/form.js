@@ -11,6 +11,7 @@ const errorMessage = document.querySelector(".errorMessage")
 const companyError = document.querySelector(".company-name")
 const countryError = document.querySelector(".country-name")
 const businessError = document.querySelector(".checkbox-error-meg")
+const errorQuarryMeg = document.querySelector(".error-quarry-meg")
 
 const generalQuery = document.getElementById("contact-checkbox-4")
 console.log(generalQuery);
@@ -23,9 +24,10 @@ const userPhone = document.getElementById("phone")
 const userMessage = document.getElementById("message")
 const companyName = document.getElementById("company-name")
 const countryName = document.getElementById("country-name")
+const quarryFilter = document.getElementById("quarryFilter")
 
-console.log(countryError);
-console.log(countryName);
+// console.log(countryError);
+console.log("quarryFilter", quarryFilter.value);
 
 const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
 
@@ -53,6 +55,8 @@ function collectCheckboxValues() {
 
 form.addEventListener(("submit"), (event) => {
     event.preventDefault()
+
+
 
     // First name
     if (userFName.value === "") {
@@ -106,7 +110,7 @@ form.addEventListener(("submit"), (event) => {
     }
 
     if (collectedValues.length === 0) {
-        businessError.innerText = "Business policy is required!"
+        businessError.innerText = "Business quarry is required!"
         return
     } else {
         businessError.innerText = ""
@@ -122,7 +126,19 @@ form.addEventListener(("submit"), (event) => {
             errorMessage.innerText = "";
         }
     }
-    console.log("data___", userMessage.value);
+
+
+    // Message
+    // Check if "General Inquiry" checkbox is selected
+    const quarryFilterValue = "Want to Know About GTRSystem Business"
+    if (collectedValues.includes(quarryFilterValue)) {
+        if (quarryFilter.value === "") {
+            errorQuarryMeg.innerText = "Quarry is required!";
+            return;
+        } else {
+            errorQuarryMeg.innerText = "";
+        }
+    }
 
 
     // When the document is ready
@@ -138,7 +154,8 @@ form.addEventListener(("submit"), (event) => {
             message: $("#message").val(),
             company: $("#company-name").val(),
             country: $("#country-name").val(),
-            value: collectedValues.map((data) => data)
+            value: collectedValues.map((data) => data),
+            productQuery: $("#quarryFilter").val(),
 
             // firstName: userNameValue,
             // lastName: userNameValue,
@@ -202,6 +219,7 @@ form.addEventListener(("submit"), (event) => {
              <p><strong>Company Name:</strong> ${formData.company ? formData.company : "Empty"}</p>
              <p><strong>Country Name:</strong> ${formData.country ? formData.country : "Empty"}</p>
              <p><strong>Inquiry For:</strong> ${formData.value ? formData.value : "Empty"}</p>
+             <p><strong>Product query:</strong> ${formData.productQuery ? formData.productQuery : "Empty"}</p>
              <div class="contact-info">
                  <p><strong>Message:</strong> ${formData.message ? formData.message : "Empty"}</p>
              </div>
@@ -254,6 +272,7 @@ form.addEventListener(("submit"), (event) => {
                 if (response.status === "failed") {
 
                     return window.location.href = "../pages/message/fail.html";
+
                 } else {
                     return window.location.href = "../pages/message/success.html";
                 }
@@ -266,6 +285,7 @@ form.addEventListener(("submit"), (event) => {
                     return window.location.href = "../pages/message/fail.html";
                 }
                 return window.location.href = "../pages/message/fail.html";
+
             },
         });
 

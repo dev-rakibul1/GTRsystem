@@ -423,41 +423,37 @@
                         <!-- select box -->
                         <div class="">
                           <h4 class="font-bold py-4 text-lg">
-                            Select your subject?
+                            Please select your quarry:
                           </h4>
 
-                          <div
-                            class="contact-us-checkbox md:flex items-center justify-between gap-4"
-                          >
+                          <div class="contact-us-checkbox md:flex gap-4">
                             <div class="">
                               <!-- checkbox 01 -->
                               <div class="">
                                 <input
                                   type="checkbox"
                                   class="checkbox"
-                                  id="contact-checkbox-1"
-                                  value="Interested in Doing Business with
-                                GTRSystem"
-                                  name="group1"
-                                  onclick="collectCheckboxValues()"
-                                />
-                                <label for="contact-checkbox-1" class="text-sm"
-                                  >Interested in Doing Business with
-                                  GTRSystem</label
-                                >
-                              </div>
-                              <!-- checkbox 02 -->
-                              <div class="mt-3">
-                                <input
-                                  type="checkbox"
-                                  class="checkbox"
                                   id="contact-checkbox-2"
-                                  value="Want to know GTRSystem Business"
+                                  value="Want to Know About GTRSystem Business"
                                   name="group2"
                                   onclick="collectCheckboxValues()"
                                 />
                                 <label for="contact-checkbox-2" class="text-sm"
-                                  >Want to know GTRSystem Business
+                                  >Want to Know About GTRSystem Business
+                                </label>
+                              </div>
+                              <!-- checkbox 02 -->
+                              <div class="md:mt-3">
+                                <input
+                                  type="checkbox"
+                                  class="checkbox"
+                                  id="contact-checkbox-3"
+                                  value="Want to Know About GTRSystem Products"
+                                  name="group3"
+                                  onclick="collectCheckboxValues()"
+                                />
+                                <label for="contact-checkbox-3" class="text-sm"
+                                  >Want to Know About GTRSystem Products
                                 </label>
                                 <small class="error-message"></small>
                               </div>
@@ -465,21 +461,28 @@
                             <div class="">
                               <!-- checkbox 03 -->
                               <div class="">
-                                <input
-                                  type="checkbox"
-                                  class="checkbox"
-                                  id="contact-checkbox-3"
-                                  value="Want to know GTRSystem Products"
-                                  name="group3"
-                                  onclick="collectCheckboxValues()"
-                                />
-                                <label for="contact-checkbox-3" class="text-sm"
-                                  >Want to know GTRSystem Products
-                                </label>
-                                <small class="error-message"></small>
+                                <select
+                                  name="quarryFilter"
+                                  class="text-sm font-normal border border-gray-400 py-1 px-2 focus:border-gray-600 focus:outline-none"
+                                  id="quarryFilter"
+                                >
+                                  <option value="">Choose Products</option>
+                                  <option value="GTRS-Galaxy (Enterprise)">
+                                    GTRS-Galaxy (Enterprise)
+                                  </option>
+                                  <option value="GTRS-orbit (b2bweb)">
+                                    GTRS-orbit (b2bweb)
+                                  </option>
+                                  <option value="GTRS-pulse(API)">
+                                    GTRS-pulse(API)
+                                  </option>
+                                </select>
                               </div>
+                              <small
+                                class="error-quarry-meg text-red-600"
+                              ></small>
                               <!-- checkbox 04 -->
-                              <div class="mt-3">
+                              <div class="md:mt-3">
                                 <input
                                   type="checkbox"
                                   class="checkbox"

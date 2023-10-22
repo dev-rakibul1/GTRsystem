@@ -1173,20 +1173,10 @@
   z-index: -1;
 
   background: rgb(255, 255, 255);
-  background: -moz-linear-gradient(
-    27deg,
-    rgba(255, 255, 255, 1) 25%,
-    rgba(255, 255, 255, 0) 62%
-  );
-  background: -webkit-linear-gradient(
-    27deg,
-    rgba(255, 255, 255, 1) 25%,
-    rgba(255, 255, 255, 0) 62%
-  );
   background: linear-gradient(
-    27deg,
-    rgba(255, 255, 255, 1) 25%,
-    rgba(255, 255, 255, 0) 62%
+    45deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(0, 0, 0, 0) 82%
   );
 }
 
