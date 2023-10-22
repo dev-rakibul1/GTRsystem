@@ -133,7 +133,7 @@ form.addEventListener(("submit"), (event) => {
     const quarryFilterValue = "Want to Know About GTRSystem Business"
     if (collectedValues.includes(quarryFilterValue)) {
         if (quarryFilter.value === "") {
-            errorQuarryMeg.innerText = "Quarry is required!";
+            errorQuarryMeg.innerText = "Product quarry is required!";
             return;
         } else {
             errorQuarryMeg.innerText = "";
@@ -240,7 +240,7 @@ form.addEventListener(("submit"), (event) => {
                 secretecode: "4e7m4sf3ylynmxriijxygidvtyd7qzag3ylvty74x",
             },
             data: JSON.stringify({
-                email_subject: `${formData?.firstName + formData?.lastName}`,
+                email_subject: `Contact Request From ${formData?.firstName}`,
                 email_body: emailBodyHtml,
                 email_to: {
                     full_name: formData.name,

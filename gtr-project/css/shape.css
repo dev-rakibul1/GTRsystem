@@ -158,6 +158,31 @@
   }
 }
 
+/* fly man move */
+.ota-flying-man {
+  display: block;
+  opacity: 1;
+  animation: flyingMan 17s ease-in-out infinite;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+}
+
+@keyframes flyingMan {
+  0% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(35deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+
 /* image shape 05 */
 
 .images-shape-move {
