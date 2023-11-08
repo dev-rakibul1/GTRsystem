@@ -350,6 +350,19 @@ try {
         nextArrow: '<button type="button" class="slick-next gtr-testimonial-slider-right"><i class="fa-solid fa-arrow-right-long"></i></button>',
     });
 
+    // gtr-Team-slider
+    $(".gtr-team-slider").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        infinite: true,
+        speed: 2500,
+        easing: 'ease-in-out',
+        arrows: false,
+
+    });
+
     // JavaScript to toggle the modal
     const modalOverlay = document.getElementById('modal-overlay');
     const modal = document.getElementById('modal');

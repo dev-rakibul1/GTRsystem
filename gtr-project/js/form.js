@@ -54,7 +54,7 @@ function collectCheckboxValues() {
 
 
 
-form.addEventListener(("submit"), (event) => {
+form.addEventListener(("submit"), async (event) => {
     event.preventDefault()
 
     // First name
@@ -127,7 +127,7 @@ form.addEventListener(("submit"), (event) => {
     }
 
 
-    // Message
+
     // Check if "General Inquiry" checkbox is selected
     const quarryFilterValue = "Want to Know About GTRSystem Business"
     if (collectedValues.includes(quarryFilterValue)) {
@@ -137,6 +137,53 @@ form.addEventListener(("submit"), (event) => {
         } else {
             errorQuarryMeg.innerText = "";
         }
+    }
+
+
+
+
+    // server data send-------------------------------
+    // Collect form data
+
+    const contactUsData = {
+        firstName: userFName.value,
+        lastName: userLName.value,
+        email: userEmail.value,
+        phone: userPhone.value,
+        message: userMessage.value,
+        company: companyName.value,
+        country: countryName.value,
+        quarryFilter: quarryFilter.value,
+        group2: collectedValues,
+
+    }
+
+    // console.log("Server data___", contactUsData);
+    try {
+        const response = await fetch("https://gtrs.vercel.app/api/v1/contact-us/create-contact/", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(contactUsData),
+        });
+
+        if (response.ok) {
+            // Success: Redirect to success page
+            // window.location.href = "../pages/message/success.html";
+            alert("Success")
+
+        } else {
+            // Error: Redirect to error page
+            // window.location.href = "../pages/message/fail.html";
+            alert("Error 2")
+        }
+    } catch (error) {
+        // Network error or other issues
+        console.error("Error:", error);
+        // Redirect to error page
+        // window.location.href = "../pages/message/fail.html";
+        alert("Error")
     }
 
 
@@ -168,66 +215,66 @@ form.addEventListener(("submit"), (event) => {
         };
 
         const emailBodyHtml = `
-     <!DOCTYPE html>
-     <html>
-     <head>
-         <meta charset="UTF-8">
-         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <title>Contact Information</title>
-         <style>
-             /* Add your styles here */
-             body {
-                 font-family: Arial, sans-serif;
-                 background-color: #f7f7f7;
-                 margin: 0;
-                 padding: 0;
-             }
+         <!DOCTYPE html>
+         <html>
+         <head>
+             <meta charset="UTF-8">
+             <meta name="viewport" content="width=device-width, initial-scale=1.0">
+             <title>Contact Information</title>
+             <style>
+                 /* Add your styles here */
+                 body {
+                     font-family: Arial, sans-serif;
+                     background-color: #f7f7f7;
+                     margin: 0;
+                     padding: 0;
+                 }
 
-             .container {
-                 max-width: 600px;
-                 margin: 0 auto;
-                 padding: 20px;
-                 background-color: #ffffff;
-                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-             }
+                 .container {
+                     max-width: 600px;
+                     margin: 0 auto;
+                     padding: 20px;
+                     background-color: #ffffff;
+                     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                 }
 
-             h1 {
-                 color: #ff5722;
-             }
+                 h1 {
+                     color: #ff5722;
+                 }
 
-             p {
-                 color: #333;
-             }
+                 p {
+                     color: #333;
+                 }
 
-             .contact-info {
-                 margin-top: 20px;
-                 background-color: #f5f5f5;
-                 padding: 10px;
-             }
+                 .contact-info {
+                     margin-top: 20px;
+                     background-color: #f5f5f5;
+                     padding: 10px;
+                 }
 
-             .contact-info p {
-                 margin: 0;
-             }
-         </style>
-     </head>
-     <body>
-         <div class="container">
-             <h1>Contact Information about ${formData?.firstName + formData?.lastName} </h1>
-             <p><strong>First name:</strong> ${formData.firstName ? formData.firstName : "Empty"}</p>
-             <p><strong>Last name:</strong> ${formData.lastName ? formData.lastName : "Empty"}</p>
-             <p><strong>Email:</strong> <a href="mailto:${formData.email ? formData.email : "xyz@gmail.com"}">${formData.email ? formData.email : "Empty"}</a></p>
-             <p><strong>Phone:</strong> ${formData.phone ? formData.phone : "Empty"}</p>
-             <p><strong>Company Name:</strong> ${formData.company ? formData.company : "Empty"}</p>
-             <p><strong>Country Name:</strong> ${formData.country ? formData.country : "Empty"}</p>
-             <p><strong>Inquiry For:</strong> ${formData.value ? formData.value : "Empty"}</p>
-             <p><strong>Product query:</strong> ${formData.productQuery ? formData.productQuery : "Empty"}</p>
-             <div class="contact-info">
-                 <p><strong>Message:</strong> ${formData.message ? formData.message : "Empty"}</p>
+                 .contact-info p {
+                     margin: 0;
+                 }
+             </style>
+         </head>
+         <body>
+             <div class="container">
+                 <h1>Contact Information about ${formData?.firstName + formData?.lastName} </h1>
+                 <p><strong>First name:</strong> ${formData.firstName ? formData.firstName : "Empty"}</p>
+                 <p><strong>Last name:</strong> ${formData.lastName ? formData.lastName : "Empty"}</p>
+                 <p><strong>Email:</strong> <a href="mailto:${formData.email ? formData.email : "xyz@gmail.com"}">${formData.email ? formData.email : "Empty"}</a></p>
+                 <p><strong>Phone:</strong> ${formData.phone ? formData.phone : "Empty"}</p>
+                 <p><strong>Company Name:</strong> ${formData.company ? formData.company : "Empty"}</p>
+                 <p><strong>Country Name:</strong> ${formData.country ? formData.country : "Empty"}</p>
+                 <p><strong>Inquiry For:</strong> ${formData.value ? formData.value : "Empty"}</p>
+                 <p><strong>Product query:</strong> ${formData.productQuery ? formData.productQuery : "Empty"}</p>
+                 <div class="contact-info">
+                     <p><strong>Message:</strong> ${formData.message ? formData.message : "Empty"}</p>
+                 </div>
              </div>
-         </div>
-     </body>
-     </html>
- `;
+         </body>
+         </html>
+     `;
 
 
 
@@ -294,8 +341,6 @@ form.addEventListener(("submit"), (event) => {
 
 
     });
-
-
     form.reset()
 
 })

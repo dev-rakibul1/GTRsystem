@@ -477,6 +477,12 @@
 
 .footer-area {
   background: #f0f0f0;
+  background: rgb(240, 240, 240);
+  background: linear-gradient(
+    90deg,
+    rgba(240, 240, 240, 1) 0%,
+    rgba(240, 240, 240, 1) 100%
+  );
 }
 
 .footer-area-single-items ul li {
@@ -1185,6 +1191,168 @@
 
 @media screen and (max-width: 768px) {
   .hotels-page-area::before {
+    background: rgb(255, 255, 255);
+    background: -moz-linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 12%,
+      rgba(255, 255, 255, 0) 72%
+    );
+    background: -webkit-linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 12%,
+      rgba(255, 255, 255, 0) 72%
+    );
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 12%,
+      rgba(255, 255, 255, 0) 72%
+    );
+  }
+}
+
+/* ----------------------------------------------------- */
+/*                   GTR GALAXY AREA
+/*         START GALAXY PAGE FOR GTR GALAXY PAGE STYLE
+/* ----------------------------------------------------- */
+
+.gtrs-galaxy-area {
+  background: url("./images/GTR-Galaxy/sunrise-planet-earth-space-1.png");
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+.gtrs-galaxy-area::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(0, 0, 0, 0) 82%
+  );
+}
+
+@media screen and (max-width: 768px) {
+  .gtrs-galaxy-area::before {
+    background: rgb(255, 255, 255);
+    background: -moz-linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 12%,
+      rgba(255, 255, 255, 0) 72%
+    );
+    background: -webkit-linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 12%,
+      rgba(255, 255, 255, 0) 72%
+    );
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 12%,
+      rgba(255, 255, 255, 0) 72%
+    );
+  }
+}
+
+/* ----------------------------------------------------- */
+/*                   GTR PULSE AREA
+/*         START PULSE PAGE FOR GTR PULSE PAGE STYLE
+/* ----------------------------------------------------- */
+
+.gtrs-pulse-area {
+  background: url("./images/GTR-Pulse/gtrs-pulse-bg.png");
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+.gtrs-pulse-area::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(0, 0, 0, 0) 82%
+  );
+}
+
+@media screen and (max-width: 768px) {
+  .gtrs-pulse-area::before {
+    background: rgb(255, 255, 255);
+    background: -moz-linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 12%,
+      rgba(255, 255, 255, 0) 72%
+    );
+    background: -webkit-linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 12%,
+      rgba(255, 255, 255, 0) 72%
+    );
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 12%,
+      rgba(255, 255, 255, 0) 72%
+    );
+  }
+}
+
+/* ----------------------------------------------------- */
+/*                   GTR ORBIT AREA
+/*         START ORBIT PAGE FOR GTR ORBIT PAGE STYLE
+/* ----------------------------------------------------- */
+
+.gtrs-orbit-area {
+  background: url("./images/GTR-Orbit/gtrs_orbit_bg.png");
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+.gtrs-orbit-area::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(0, 0, 0, 0) 82%
+  );
+}
+
+@media screen and (max-width: 768px) {
+  .gtrs-orbit-area::before {
     background: rgb(255, 255, 255);
     background: -moz-linear-gradient(
       0deg,
