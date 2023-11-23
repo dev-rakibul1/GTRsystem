@@ -1,0 +1,47 @@
+.open-drawer {
+  transition: all 0.5s;
+  transform: translateY(100px);
+}
+.close-drawer {
+  transition: all 0.5s;
+  transform: translateY(100px);
+}
+
+.animate__fadeOut {
+  opacity: 0;
+  max-height: 0;
+  transition: max-height 0.3s, opacity 0.3s;
+}
+
+.animate__fadeIn.active {
+  opacity: 1;
+  max-height: 1000px;
+}
+
+.accordion-content-container {
+  overflow: hidden;
+  max-height: 0;
+  transition: all 0.5s;
+}
+
+.accordion-content-container.open {
+  max-height: 1000px;
+  transition: all 0.5s;
+}
+
+.icon-move-bottom {
+  transition: all 0.5s;
+  transform: rotate(90deg);
+}
+.icon-move-left {
+  transition: all 0.5s;
+  transform: rotate(0deg);
+}
+
+.accordion-content a {
+  border-left: 2px solid transparent !important;
+}
+.accordion-content a.active {
+  border-left: 2px solid green !important;
+  transition: all 0.5s;
+}

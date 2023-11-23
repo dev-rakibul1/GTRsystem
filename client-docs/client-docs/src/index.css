@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Contribute area */
+.contribute-single-box {
+  display: flex;
+  justify-content: center;
+  background-color: #222931;
+  align-items: center;
+}
+
+.contribute-imagesTwo,
+.contribute-aricle,
+.contribute-images {
+  width: 50%;
+}
+.contribute-aricle {
+  width: 50%;
+  /* padding-left: 150px;
+  padding-right: 15px; */
+}
+
+.contribute-images {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),
+    url("https://www.1800flowers.com/blog/wp-content/uploads/2015/11/orange-chrysanthemum-flower.jpg.webp");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-height: 500px;
+  height: 300px;
+}
+
+.contribute-imagesTwo {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),
+    url("https://www.1800flowers.com/blog/wp-content/uploads/2016/10/fall-crocus-purple-lavender-flower.jpg.webp");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-height: 500px;
+  height: 300px;
+}
+
+.contribute-aricle h3 {
+  font-size: 19px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.contribute-aricle p {
+  color: rgb(219, 214, 214);
+  font-weight: 300;
+  line-height: 24px;
+  margin-bottom: 26px;
+  font-size: 15px;
+}
+
+.contribute-aricle .sp {
+  border-left: 1px solid rgb(121 121 121);
+  padding-left: 55px;
+  margin-left: 30px;
+  height: 64px;
+  padding-top: 0px;
+}
